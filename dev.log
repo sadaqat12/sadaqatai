@@ -869,3 +869,4 @@ Email sent successfully: { data: { id: '5c78e48d-ea2e-4be6-b342-c4c2fd0c8dc4' },
   syscall: 'open',
   path: '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/pages/_app/build-manifest.json'
 }
+ ✓ Compiled in 259ms
