@@ -17,18 +17,19 @@ function isValidEmail(email: string): boolean {
 }
 
 // Validate form data
-function validateFormData(data: any): { isValid: boolean; errors: string[] } {
+function validateFormData(data: unknown): { isValid: boolean; errors: string[] } {
   const errors: string[] = [];
+  const formData = data as Record<string, unknown>;
 
-  if (!data.name || typeof data.name !== "string" || data.name.trim().length === 0) {
+  if (!formData.name || typeof formData.name !== "string" || formData.name.trim().length === 0) {
     errors.push("Name is required");
   }
 
-  if (!data.email || typeof data.email !== "string" || !isValidEmail(data.email)) {
+  if (!formData.email || typeof formData.email !== "string" || !isValidEmail(formData.email)) {
     errors.push("Valid email is required");
   }
 
-  if (!data.message || typeof data.message !== "string" || data.message.trim().length < 10) {
+  if (!formData.message || typeof formData.message !== "string" || formData.message.trim().length < 10) {
     errors.push("Message must be at least 10 characters");
   }
 
@@ -60,7 +61,7 @@ export async function POST(request: NextRequest) {
         from: 'Portfolio Contact <onboarding@resend.dev>', // You'll need to verify your domain
         to: ['ali568osu@gmail.com'], // Your email address
         subject: `New Contact Form Submission from ${name}`,
-        reply_to: email,
+        replyTo: email,
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
             <h2 style="color: #333;">New Contact Form Submission</h2>

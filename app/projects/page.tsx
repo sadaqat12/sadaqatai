@@ -87,8 +87,11 @@ export default function ProjectsPage() {
           {projects.map((project, index) => (
             <ProjectCard
               key={project.id}
-              project={project}
-              index={index}
+              id={project.id}
+              title={project.title}
+              description={project.description}
+              thumbnail={project.thumbnail}
+              delay={index * 0.1}
             />
           ))}
         </div>

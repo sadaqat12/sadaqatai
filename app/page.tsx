@@ -240,7 +240,7 @@ export default function Home() {
       } else {
         setContactStatus({ type: 'error', message: data.error || 'Something went wrong. Please try again.' });
       }
-    } catch (error) {
+    } catch {
       setContactStatus({ type: 'error', message: 'Failed to send message. Please try again later.' });
     } finally {
       setIsContactSubmitting(false);
@@ -347,16 +347,16 @@ export default function Home() {
           <div className="mb-20 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 leading-relaxed text-lg">
-                I'm an AI-First Engineer currently participating in Gauntlet AI's intensive challenge program, where I'm mastering the art of building cutting-edge AI applications. 
-                With a unique blend of technical expertise and business acumen, I've successfully driven 3x growth as COO of a family business while pursuing my passion for technology.
+                I&apos;m an AI-First Engineer currently participating in Gauntlet AI&apos;s intensive challenge program, where I&apos;m mastering the art of building cutting-edge AI applications. 
+                With a unique blend of technical expertise and business acumen, I&apos;ve successfully driven 3x growth as COO of a family business while pursuing my passion for technology.
               </p>
               <p className="text-gray-700 leading-relaxed text-lg mt-4">
-                Currently pursuing my Master's in Computer Science at Georgia Tech, I bring hands-on experience from cloud security internships at Nationwide, 
-                where I built AWS-based monitoring systems and enhanced data analytics platforms. My Bachelor's in Computer Science & Engineering from The Ohio State University, 
+                Currently pursuing my Master&apos;s in Computer Science at Georgia Tech, I bring hands-on experience from cloud security internships at Nationwide, 
+                where I built AWS-based monitoring systems and enhanced data analytics platforms. My Bachelor&apos;s in Computer Science & Engineering from The Ohio State University, 
                 combined with a minor in Business, provides me with a holistic approach to solving complex problems.
               </p>
               <p className="text-gray-700 leading-relaxed text-lg mt-4">
-                Through the Gauntlet AI program, I'm pushing the boundaries of what's possible with artificial intelligence, 
+                Through the Gauntlet AI program, I&apos;m pushing the boundaries of what&apos;s possible with artificial intelligence, 
                 designing and deploying end-to-end AI solutions while collaborating with top-tier engineers. My goal is to leverage this expertise 
                 to build innovative, intelligent applications that create real-world impact.
               </p>
@@ -708,7 +708,7 @@ export default function Home() {
           {/* Ready to Innovate Card - Full Width */}
           <div className="bg-gray-900 text-white rounded-2xl p-8 text-center mt-12 animate-fade-in" style={{ animationDelay: "0.3s" }}>
             <h3 className="text-2xl font-bold mb-2">Ready to Innovate?</h3>
-            <p className="text-gray-300 mb-6">Let's build the future with AI together</p>
+            <p className="text-gray-300 mb-6">Let&apos;s build the future with AI together</p>
             <button
               onClick={() => {
                 const element = document.getElementById('contact');

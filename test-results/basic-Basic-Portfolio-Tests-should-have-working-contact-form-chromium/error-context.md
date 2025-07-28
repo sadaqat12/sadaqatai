@@ -1,0 +1,381 @@
+# Page snapshot
+
+```yaml
+- main:
+  - img "Sadaqat Ali"
+  - heading "Sadaqat Ali" [level=1]
+  - paragraph: AI-First Developer & Problem Solver
+  - paragraph: Building innovative solutions at the intersection of AI and software engineering. Passionate about creating elegant, scalable applications that solve real-world problems.
+  - link "About Me":
+    - /url: "#about"
+  - link "View Projects":
+    - /url: "#projects"
+  - link "Skills & Experience":
+    - /url: "#skills"
+  - link "Download Resume":
+    - /url: /SadaqatAli.pdf
+  - link "Contact Me":
+    - /url: "#contact"
+  - heading "About Me" [level=2]
+  - paragraph: Passionate about leveraging AI to solve complex problems
+  - paragraph: I'm an AI-First Engineer currently participating in Gauntlet AI's intensive challenge program, where I'm mastering the art of building cutting-edge AI applications. With a unique blend of technical expertise and business acumen, I've successfully driven 3x growth as COO of a family business while pursuing my passion for technology.
+  - paragraph: Currently pursuing my Master's in Computer Science at Georgia Tech, I bring hands-on experience from cloud security internships at Nationwide, where I built AWS-based monitoring systems and enhanced data analytics platforms. My Bachelor's in Computer Science & Engineering from The Ohio State University, combined with a minor in Business, provides me with a holistic approach to solving complex problems.
+  - paragraph: Through the Gauntlet AI program, I'm pushing the boundaries of what's possible with artificial intelligence, designing and deploying end-to-end AI solutions while collaborating with top-tier engineers. My goal is to leverage this expertise to build innovative, intelligent applications that create real-world impact.
+  - heading "Education" [level=3]
+  - img "Georgia Tech"
+  - heading "Master of Science in Computer Science" [level=4]
+  - paragraph: Georgia Institute of Technology
+  - paragraph: Aug 2025
+  - paragraph: "Specialization: Machine Learning & AI Systems"
+  - img "Ohio State"
+  - heading "Bachelor of Science in Computer Science & Engineering" [level=4]
+  - paragraph: The Ohio State University
+  - paragraph: Dec 2020
+  - paragraph: Minor in Business
+  - heading "Featured Projects" [level=2]
+  - paragraph: A showcase of my recent work in AI, machine learning, and full-stack development
+  - link "AI Chat Assistant AI Chat Assistant Advanced conversational AI with natural language processing":
+    - /url: /projects/1
+    - img "AI Chat Assistant"
+    - img
+    - heading "AI Chat Assistant" [level=3]
+    - paragraph: Advanced conversational AI with natural language processing
+  - link "Computer Vision System Computer Vision System Real-time object detection and image analysis platform":
+    - /url: /projects/2
+    - img "Computer Vision System"
+    - img
+    - heading "Computer Vision System" [level=3]
+    - paragraph: Real-time object detection and image analysis platform
+  - link "ML Data Pipeline ML Data Pipeline Scalable data processing infrastructure for machine learning":
+    - /url: /projects/3
+    - img "ML Data Pipeline"
+    - img
+    - heading "ML Data Pipeline" [level=3]
+    - paragraph: Scalable data processing infrastructure for machine learning
+  - link "NLP Analysis Tool NLP Analysis Tool Text analysis and sentiment detection application":
+    - /url: /projects/4
+    - img "NLP Analysis Tool"
+    - img
+    - heading "NLP Analysis Tool" [level=3]
+    - paragraph: Text analysis and sentiment detection application
+  - link "Predictive Analytics Predictive Analytics Time series forecasting and trend analysis system":
+    - /url: /projects/5
+    - img "Predictive Analytics"
+    - img
+    - heading "Predictive Analytics" [level=3]
+    - paragraph: Time series forecasting and trend analysis system
+  - link "AI Code Assistant AI Code Assistant Intelligent code completion and review system":
+    - /url: /projects/6
+    - img "AI Code Assistant"
+    - img
+    - heading "AI Code Assistant" [level=3]
+    - paragraph: Intelligent code completion and review system
+  - heading "Skills & Experience" [level=2]
+  - paragraph: A comprehensive toolkit for building intelligent, scalable, and innovative solutions across the full spectrum of modern technology.
+  - heading "Technical Expertise" [level=3]
+  - text: 🧠
+  - heading "Artificial Intelligence" [level=4]
+  - list:
+    - listitem:
+      - img
+      - text: Machine Learning
+    - listitem:
+      - img
+      - text: Deep Learning
+    - listitem:
+      - img
+      - text: Neural Networks
+    - listitem:
+      - img
+      - text: Computer Vision
+    - listitem:
+      - img
+      - text: LLMs
+    - listitem:
+      - img
+      - text: Prompt Engineering
+  - text: 💻
+  - heading "Programming Languages" [level=4]
+  - list:
+    - listitem:
+      - img
+      - text: Python
+    - listitem:
+      - img
+      - text: JavaScript
+    - listitem:
+      - img
+      - text: TypeScript
+    - listitem:
+      - img
+      - text: Java
+    - listitem:
+      - img
+      - text: C++
+    - listitem:
+      - img
+      - text: SQL
+  - text: 🌐
+  - heading "Web Development" [level=4]
+  - list:
+    - listitem:
+      - img
+      - text: React
+    - listitem:
+      - img
+      - text: Next.js
+    - listitem:
+      - img
+      - text: Node.js
+    - listitem:
+      - img
+      - text: REST APIs
+    - listitem:
+      - img
+      - text: Tailwind CSS
+  - text: 📊
+  - heading "Data & Databases" [level=4]
+  - list:
+    - listitem:
+      - img
+      - text: PostgreSQL
+    - listitem:
+      - img
+      - text: Supabase
+    - listitem:
+      - img
+      - text: Firebase
+    - listitem:
+      - img
+      - text: Data Analysis
+    - listitem:
+      - img
+      - text: Pandas
+    - listitem:
+      - img
+      - text: NumPy
+    - listitem:
+      - img
+      - text: Scikit-learn
+  - text: ☁️
+  - heading "Cloud & DevOps" [level=4]
+  - list:
+    - listitem:
+      - img
+      - text: AWS
+    - listitem:
+      - img
+      - text: Docker
+    - listitem:
+      - img
+      - text: Kubernetes
+    - listitem:
+      - img
+      - text: CI/CD
+    - listitem:
+      - img
+      - text: Linux
+    - listitem:
+      - img
+      - text: Monitoring
+  - text: 📱
+  - heading "Mobile Development" [level=4]
+  - list:
+    - listitem:
+      - img
+      - text: React Native
+    - listitem:
+      - img
+      - text: iOS
+    - listitem:
+      - img
+      - text: Expo
+    - listitem:
+      - img
+      - text: Mobile UI/UX
+  - text: 🤖
+  - heading "AI Infrastructure" [level=4]
+  - list:
+    - listitem:
+      - img
+      - text: LangChain
+    - listitem:
+      - img
+      - text: N8N
+    - listitem:
+      - img
+      - text: Model Monitoring
+  - text: 🛠️
+  - heading "Development Tools" [level=4]
+  - list:
+    - listitem:
+      - img
+      - text: Claude Code
+    - listitem:
+      - img
+      - text: Cursor
+    - listitem:
+      - img
+      - text: Task-Master
+    - listitem:
+      - img
+      - text: Git
+    - listitem:
+      - img
+      - text: GitHub
+    - listitem:
+      - img
+      - text: VS Code
+    - listitem:
+      - img
+      - text: Postman
+    - listitem:
+      - img
+      - text: Slack
+  - heading "Professional Experience" [level=3]
+  - heading "AI-First Engineer | Challenger" [level=4]
+  - paragraph: Gauntlet AI
+  - text: Jun 2025 - Present
+  - paragraph: Completing an intensive 10-week AI engineering sprint (80-100 hrs/week), combining 3 weeks of remote workshops with 7 weeks on-site in Austin, TX
+  - list:
+    - listitem:
+      - img
+      - text: Designing and deploying end-to-end AI applications, delivering weekly 'gauntlet' challenges
+    - listitem:
+      - img
+      - text: Collaborating with a hand-picked cohort of top-tier engineers and mentors
+    - listitem:
+      - img
+      - text: Mastering prompt engineering, API orchestration, and AI-first software best practices
+  - heading "Chief Operating Officer" [level=4]
+  - paragraph: Bargain House Appliances LLC
+  - text: Jan 2021 - Present
+  - paragraph: Spearheaded the successful operation of the family appliance business, driving a close to 3x increase in sales
+  - list:
+    - listitem:
+      - img
+      - text: Implemented innovative strategies that drove 3x sales growth through operational optimization
+    - listitem:
+      - img
+      - text: Launched an online ordering platform and expanded to a second location
+    - listitem:
+      - img
+      - text: Transformed logistics from paperwork and Excel to sophisticated POS and inventory management solution
+    - listitem:
+      - img
+      - text: Proven ability to drive growth, optimize operations and deliver results in a competitive market
+  - heading "Cloud Security Engineering Intern" [level=4]
+  - paragraph: Nationwide
+  - text: May 2021 - Jul 2021
+  - paragraph: Worked with Data Analytics team to enhance dashboards and add additional functionalities
+  - list:
+    - listitem:
+      - img
+      - text: Enhanced data visualization dashboards with advanced analytics features
+    - listitem:
+      - img
+      - text: Collaborated with cross-functional teams to improve security monitoring capabilities
+    - listitem:
+      - img
+      - text: Gained hands-on experience with enterprise-level cloud security tools and practices
+  - heading "Cloud Security Engineering Intern" [level=4]
+  - paragraph: Nationwide
+  - text: May 2020 - Aug 2020
+  - paragraph: Built a monitoring and alert system for the existing Vaucanson system using AWS services
+  - list:
+    - listitem:
+      - img
+      - text: Developed AWS-based monitoring system saving developers' time and preventing monetary losses
+    - listitem:
+      - img
+      - text: Updated UI for flask web app with improved security and containerization
+    - listitem:
+      - img
+      - text: Updated Docker and Kubernetes configurations with analytical insights for CB team
+    - listitem:
+      - img
+      - text: "Technologies: Python, AWS CloudWatch, Lambda, X-Ray, EC2, SNS, Docker, Kubernetes, GitHub"
+  - heading "Undergraduate Teaching Assistant" [level=4]
+  - paragraph: The Ohio State University
+  - text: Aug 2019 - May 2020
+  - paragraph: Assisted students in the lab with various problems that arise during coursework
+  - list:
+    - listitem:
+      - img
+      - text: Assisted students in the lab with various programming problems during coursework
+    - listitem:
+      - img
+      - text: Held office hours to assist students with Java assignments
+    - listitem:
+      - img
+      - text: Graded Java labs and projects, providing constructive feedback
+  - heading "Applications Development Intern" [level=4]
+  - paragraph: Nationwide
+  - text: May 2019 - Aug 2019
+  - paragraph: Worked on the Personal Lines Transformation Team to modernize legacy systems
+  - list:
+    - listitem:
+      - img
+      - text: Utilized PolicyCenter, Guidewire's SaaS, to ensure compliance with various states' laws
+    - listitem:
+      - img
+      - text: Assisted in PLT's efforts to move from legacy environments to the cloud
+    - listitem:
+      - img
+      - text: Completed story cards and enhanced company goals in an Agile team environment
+    - listitem:
+      - img
+      - text: "Technologies: GOSU, XML, Git, PolicyCenter, QualityCenter, and SQL"
+  - heading "IT Intern" [level=4]
+  - paragraph: Ohio Industrial Commission
+  - text: Dec 2018 - Apr 2019
+  - paragraph: Built multiple Java Graphical User interfaces to improve operational efficiency
+  - list:
+    - listitem:
+      - img
+      - text: Built multiple Java Graphical User interfaces to assist managers in task efficiency
+    - listitem:
+      - img
+      - text: Developed tools that streamlined internal processes and improved productivity
+    - listitem:
+      - img
+      - text: Gained hands-on experience with enterprise Java application development
+  - img
+  - heading "Available for Opportunities" [level=3]
+  - paragraph: Graduating from Gauntlet AI in August 2025, ready for exciting AI engineering roles
+  - heading "Send a Message" [level=2]
+  - text: Name
+  - textbox "Name"
+  - text: Email
+  - textbox "Email"
+  - text: Subject
+  - textbox "Subject"
+  - text: Message
+  - textbox "Message"
+  - button "Send Message":
+    - img
+    - text: Send Message
+  - img
+  - heading "Email" [level=4]
+  - link "ali568osu@gmail.com":
+    - /url: mailto:ali568osu@gmail.com
+  - paragraph: Send me a message anytime
+  - img
+  - heading "LinkedIn" [level=4]
+  - link "/in/alisadaqat":
+    - /url: https://linkedin.com/in/alisadaqat
+  - paragraph: Connect with me professionally
+  - img
+  - heading "GitHub" [level=4]
+  - link "@sadaqat12":
+    - /url: https://github.com/sadaqat12
+  - paragraph: Check out my code
+  - img
+  - heading "Location" [level=4]
+  - paragraph: Columbus, OH
+  - paragraph: Available for opportunities!
+  - heading "Ready to Innovate?" [level=3]
+  - paragraph: Let's build the future with AI together
+  - button "Start a Conversation"
+- alert
+```

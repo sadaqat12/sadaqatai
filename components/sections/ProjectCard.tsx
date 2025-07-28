@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
 
 interface ProjectCardProps {
   id: number;
@@ -13,15 +12,11 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ id, title, description, thumbnail, delay = 0 }: ProjectCardProps) {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
     <Link href={`/projects/${id}`}>
       <div
         className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer animate-fade-in"
         style={{ animationDelay: `${delay}s` }}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
       >
         {/* Thumbnail Container */}
         <div className="relative aspect-video overflow-hidden bg-gray-100">
