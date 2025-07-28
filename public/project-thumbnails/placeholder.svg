@@ -1,0 +1,9 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#F3F4F6"/>
+  <rect x="350" y="187.5" width="100" height="75" rx="10" fill="#9CA3AF"/>
+  <path d="M400 215L380 237.5V215L400 215Z" fill="white"/>
+  <path d="M400 215L420 237.5V215H400Z" fill="white"/>
+  <path d="M400 215L380 192.5V215H400Z" fill="white"/>
+  <path d="M400 215L420 192.5V215L400 215Z" fill="white"/>
+  <text x="400" y="280" text-anchor="middle" fill="#6B7280" font-family="system-ui" font-size="16">Project Preview</text>
+</svg>

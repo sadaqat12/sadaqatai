@@ -1,0 +1,623 @@
+
+> sadaqat-portfolio@0.1.0 dev
+> next dev --turbopack
+
+ ⚠ Warning: Found multiple lockfiles. Selecting /Users/sadaqatali/Documents/GauntletAI/package-lock.json.
+   Consider removing the lockfiles at:
+   * /Users/sadaqatali/Documents/GauntletAI/sadaqatai/package-lock.json
+
+   ▲ Next.js 15.4.4 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.221:3000
+
+ ✓ Starting...
+ ✓ Ready in 775ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1268ms
+ GET / 200 in 1457ms
+ GET / 200 in 44ms
+ ✓ Compiled / in 19ms
+ GET / 200 in 115ms
+ ✓ Compiled in 96ms
+ ✓ Compiled / in 21ms
+ GET / 200 in 94ms
+ GET / 200 in 142ms
+ ✓ Compiled /_not-found/page in 172ms
+ GET /projects 404 in 201ms
+ GET /projects 404 in 37ms
+ GET /about 404 in 16ms
+ GET /about 404 in 33ms
+ GET / 200 in 33ms
+ ✓ Compiled in 227ms
+ GET / 200 in 141ms
+ ✓ Compiled in 89ms
+ GET / 200 in 142ms
+ ✓ Compiled /projects in 286ms
+ GET /projects 200 in 309ms
+ GET /projects/1 404 in 68ms
+ GET /projects/1 404 in 44ms
+ GET /projects 200 in 86ms
+ GET /projects/1 404 in 35ms
+ GET /projects/1 404 in 47ms
+ GET /projects 200 in 120ms
+ GET /skills 404 in 26ms
+ GET /skills 404 in 41ms
+ GET / 200 in 18ms
+ ✓ Compiled in 105ms
+ GET / 200 in 122ms
+ GET / 200 in 69ms
+ GET / 200 in 79ms
+ GET /projects 200 in 27ms
+ GET /about 404 in 52ms
+ GET /about 404 in 58ms
+ GET /skills 404 in 14ms
+ GET /skills 404 in 29ms
+ GET /contact 404 in 32ms
+ GET /contact 404 in 41ms
+ GET / 200 in 16ms
+ ✓ Compiled /projects/[id] in 319ms
+Error: Route "/projects/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at <unknown> (app/projects/[id]/page.tsx:133:66)
+    at Array.find (<anonymous>)
+    at ProjectDetailPage (app/projects/[id]/page.tsx:133:31)
+  131 |
+  132 | export default function ProjectDetailPage({ params }: { params: { id: string } }) {
+> 133 |   const project = projectsData.find(p => p.id === parseInt(params.id));
+      |                                                                  ^
+  134 |
+  135 |   if (!project) {
+  136 |     notFound();
+ GET /projects/1 200 in 700ms
+ GET /projects 200 in 92ms
+ GET / 200 in 114ms
+ GET /projects 200 in 29ms
+Error: Route "/projects/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at <unknown> (app/projects/[id]/page.tsx:133:66)
+    at Array.find (<anonymous>)
+    at ProjectDetailPage (app/projects/[id]/page.tsx:133:31)
+  131 |
+  132 | export default function ProjectDetailPage({ params }: { params: { id: string } }) {
+> 133 |   const project = projectsData.find(p => p.id === parseInt(params.id));
+      |                                                                  ^
+  134 |
+  135 |   if (!project) {
+  136 |     notFound();
+ GET /projects/1 200 in 40ms
+ GET /projects 200 in 44ms
+ GET /skills 404 in 34ms
+ GET /skills 404 in 71ms
+ GET /about 404 in 73ms
+ GET /about 404 in 85ms
+ GET /contact 404 in 37ms
+ GET /contact 404 in 80ms
+ GET / 200 in 26ms
+ ✓ Compiled in 145ms
+ GET / 200 in 137ms
+ GET / 200 in 26ms
+ GET / 200 in 110ms
+ GET / 200 in 27ms
+ ✓ Compiled /contact in 262ms
+ GET /contact 200 in 358ms
+ ✓ Compiled /api/contact in 452ms
+Contact form submission: {
+  name: 'Test User',
+  email: 'test@example.com',
+  message: 'This is a test message for the contact form.',
+  timestamp: '2025-07-28T18:28:53.443Z'
+}
+ POST /api/contact 200 in 506ms
+ GET / 200 in 107ms
+ GET /contact 200 in 43ms
+ GET /skills 404 in 71ms
+ GET /skills 404 in 56ms
+ GET /projects 200 in 28ms
+ GET /about 404 in 23ms
+ GET /about 404 in 31ms
+ GET / 200 in 20ms
+ ✓ Compiled in 178ms
+ GET / 200 in 134ms
+ GET / 200 in 54ms
+ ✓ Compiled /about in 315ms
+ GET /about 200 in 452ms
+ ✓ Compiled in 145ms
+ GET / 200 in 118ms
+ ✓ Compiled in 172ms
+ ✓ Compiled /skills in 254ms
+ GET /skills 200 in 406ms
+ GET /skills 200 in 116ms
+ GET /about 200 in 46ms
+ GET /skills 200 in 34ms
+ GET / 200 in 40ms
+ GET /skills 200 in 37ms
+ ✓ Compiled /skills in 17ms
+ ⨯ ReferenceError: skills is not defined
+    at SkillsPage (app/skills/page.tsx:177:13)
+  175 |           
+  176 |           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+> 177 |             {skills.map((skill, index) => (
+      |             ^
+  178 |               <div key={skill.name} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+  179 |                 <div className="flex justify-between items-center mb-2">
+  180 |                   <h3 className="font-semibold text-gray-900">{skill.name}</h3> {
+  digest: '844971350'
+}
+ GET /skills 200 in 143ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 81ms
+ ✓ Compiled /skills in 22ms
+ GET /skills 200 in 327ms
+ GET /skills 200 in 119ms
+ ✓ Compiled /skills in 31ms
+ GET /skills 200 in 225ms
+ ✓ Compiled /skills in 27ms
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /skills 200 in 145ms
+ GET /skills 200 in 53ms
+ GET /skills 200 in 48ms
+ GET /skills 200 in 37ms
+ GET /skills 200 in 36ms
+ GET /skills 200 in 53ms
+ GET /skills 200 in 60ms
+ ✓ Compiled in 102ms
+ ✓ Compiled /skills in 34ms
+ GET /skills 200 in 190ms
+ GET /skills 200 in 52ms
+ GET /skills 200 in 38ms
+ GET /skills 200 in 61ms
+ GET /skills 200 in 50ms
+ GET /skills 200 in 39ms
+ GET /skills 200 in 55ms
+ ✓ Compiled in 96ms
+ GET /skills 200 in 47ms
+ ✓ Compiled /skills in 14ms
+ GET /skills 200 in 142ms
+ ✓ Compiled in 286ms
+ GET /skills 200 in 89ms
+ ✓ Compiled in 73ms
+ GET /skills 200 in 80ms
+ ✓ Compiled in 44ms
+ GET /skills 200 in 69ms
+ ✓ Compiled in 104ms
+ GET /skills 200 in 75ms
+ ✓ Compiled /skills in 18ms
+ GET /skills 200 in 200ms
+ GET /skills 200 in 98ms
+ GET /skills 200 in 42ms
+ GET /skills 200 in 48ms
+ GET /skills 200 in 59ms
+ GET /skills 200 in 52ms
+ GET /skills 200 in 41ms
+ GET /skills 200 in 38ms
+ GET /skills 200 in 46ms
+ ⨯ ./app/favicon.ico
+Processing image failed
+unable to decode image data
+
+Caused by:
+- Format error decoding Ico: ICO image entry has too many color planes or too large hotspot value
+- ICO image entry has too many color planes or too large hotspot value
+
+
+ ○ Compiling /_error ...
+ ✓ Compiled in 1367ms
+ ✓ Compiled /_error in 679ms
+ GET /skills 500 in 1400ms
+ ⨯ ./app/favicon.ico
+Processing image failed
+unable to decode image data
+
+Caused by:
+- Format error decoding Ico: ICO image entry has too many color planes or too large hotspot value
+- ICO image entry has too many color planes or too large hotspot value
+
+
+ GET /skills 500 in 39ms
+ ⨯ ./app/favicon.ico
+Processing image failed
+unable to decode image data
+
+Caused by:
+- Format error decoding Ico: ICO image entry has too many color planes or too large hotspot value
+- ICO image entry has too many color planes or too large hotspot value
+
+
+ GET /skills 500 in 49ms
+ ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/shared/lib/router/router.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/shared/lib/router/router.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled /skills in 15ms
+ GET /skills 200 in 413ms
+ ✓ Compiled /projects in 23ms
+ GET /projects 200 in 116ms
+ ✓ Compiled / in 26ms
+ GET / 200 in 258ms
+ ✓ Compiled /projects/[id] in 12ms
+Error: Route "/projects/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at <unknown> (app/projects/[id]/page.tsx:161:66)
+    at Array.find (<anonymous>)
+    at ProjectDetailPage (app/projects/[id]/page.tsx:161:31)
+  159 |
+  160 | export default async function ProjectDetailPage({ params }: { params: { id: string } }) {
+> 161 |   const project = projectsData.find(p => p.id === parseInt(params.id));
+      |                                                                  ^
+  162 |
+  163 |   if (!project) {
+  164 |     notFound();
+Error: Route "/projects/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at <unknown> (app/projects/[id]/page.tsx:134:66)
+    at Array.find (<anonymous>)
+    at Module.generateMetadata (app/projects/[id]/page.tsx:134:31)
+  132 |
+  133 | export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
+> 134 |   const project = projectsData.find(p => p.id === parseInt(params.id));
+      |                                                                  ^
+  135 |   
+  136 |   if (!project) {
+  137 |     return {
+ GET /projects/1 200 in 111ms
+ GET /projects 200 in 25ms
+ GET / 200 in 51ms
+ ✓ Compiled /contact in 58ms
+ GET /contact 200 in 175ms
+ GET / 200 in 62ms
+ ✓ Compiled in 219ms
+ ✓ Compiled in 75ms
+ GET / 200 in 53ms
+ ✓ Compiled in 226ms
+ ✓ Compiled / in 46ms
+ GET / 200 in 266ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 506ms
+ ✓ Compiled / in 81ms
+ ⨯ TypeError: Cannot read properties of undefined (reading 'id')
+    at ProjectCard (components/sections/ProjectCard.tsx:26:37)
+  24 |
+  25 |   return (
+> 26 |     <Link href={`/projects/${project.id}`}>
+     |                                     ^
+  27 |       <div
+  28 |         className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer animate-fade-in"
+  29 |         style={{ animationDelay: `${index * 0.1}s` }} {
+  digest: '386221630'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'id')
+    at ProjectCard (components/sections/ProjectCard.tsx:26:37)
+  24 |
+  25 |   return (
+> 26 |     <Link href={`/projects/${project.id}`}>
+     |                                     ^
+  27 |       <div
+  28 |         className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer animate-fade-in"
+  29 |         style={{ animationDelay: `${index * 0.1}s` }} {
+  digest: '386221630'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'id')
+    at ProjectCard (components/sections/ProjectCard.tsx:26:37)
+  24 |
+  25 |   return (
+> 26 |     <Link href={`/projects/${project.id}`}>
+     |                                     ^
+  27 |       <div
+  28 |         className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer animate-fade-in"
+  29 |         style={{ animationDelay: `${index * 0.1}s` }} {
+  digest: '386221630'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'id')
+    at ProjectCard (components/sections/ProjectCard.tsx:26:37)
+  24 |
+  25 |   return (
+> 26 |     <Link href={`/projects/${project.id}`}>
+     |                                     ^
+  27 |       <div
+  28 |         className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer animate-fade-in"
+  29 |         style={{ animationDelay: `${index * 0.1}s` }} {
+  digest: '386221630'
+}
+ GET / 500 in 556ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 129ms
+ ⨯ ReferenceError: index is not defined
+    at ProjectCard (components/sections/ProjectCard.tsx:22:36)
+  20 |       <div
+  21 |         className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer animate-fade-in"
+> 22 |         style={{ animationDelay: `${index * 0.1}s` }}
+     |                                    ^
+  23 |         onMouseEnter={() => setIsHovered(true)}
+  24 |         onMouseLeave={() => setIsHovered(false)}
+  25 |       > {
+  digest: '670805801'
+}
+ GET / 500 in 347ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 122ms
+ ⨯ ReferenceError: project is not defined
+    at ProjectCard (components/sections/ProjectCard.tsx:40:21)
+  38 |             <div className="relative w-full h-full">
+  39 |               <Image
+> 40 |                 src={project.thumbnail}
+     |                     ^
+  41 |                 alt={project.title}
+  42 |                 fill
+  43 |                 className="object-cover" {
+  digest: '1971662498'
+}
+ GET / 500 in 371ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 127ms
+ GET / 200 in 382ms
+ GET / 200 in 256ms
+ GET / 200 in 223ms
+ ✓ Compiled in 281ms
+ ✓ Compiled in 142ms
+ ✓ Compiled in 144ms
+ ✓ Compiled in 142ms
+ ✓ Compiled in 166ms
+ ✓ Compiled in 148ms
+ ✓ Compiled in 123ms
+ ✓ Compiled in 104ms
+ ✓ Compiled in 93ms
+ GET / 200 in 617ms
+ GET / 200 in 168ms
+ ✓ Compiled /_not-found/page in 97ms
+ GET /images/headshot.jpg 404 in 335ms
+ ⨯ The requested resource isn't a valid image for /images/headshot.jpg received text/html; charset=utf-8
+[Error: The requested resource isn't a valid image.] { statusCode: 400 }
+ GET / 200 in 77ms
+ GET / 200 in 120ms
+ GET / 200 in 74ms
+ ✓ Compiled in 186ms
+ GET / 200 in 428ms
+ ✓ Compiled in 196ms
+ GET / 200 in 319ms
+ ✓ Compiled in 184ms
+ GET / 200 in 412ms
+ ✓ Compiled in 244ms
+ ✓ Compiled in 222ms
+ ✓ Compiled in 126ms
+ ✓ Compiled in 157ms
+ ✓ Compiled in 202ms
+ ✓ Compiled in 273ms
+ ✓ Compiled in 210ms
+ ⨯ ./app/page.tsx:662:15
+Parsing ecmascript source code failed
+[0m [90m 660 |[39m             [33m<[39m[33m/[39m[33mbutton[39m[33m>[39m
+ [90m 661 |[39m           [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+[31m[1m>[22m[39m[90m 662 |[39m         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+ [90m     |[39m               [31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 663 |[39m       [33m<[39m[33m/[39m[33msection[39m[33m>[39m
+ [90m     |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 664 |[39m     [33m<[39m[33m/[39m[33m>[39m
+ [90m 665 |[39m   )[33m;[39m
+ [90m 666 |[39m }[0m
+
+Expected '</', got 'jsx text (
+      )'
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+ GET / 500 in 123ms
+ ⨯ ./app/page.tsx:662:15
+Parsing ecmascript source code failed
+[0m [90m 660 |[39m             [33m<[39m[33m/[39m[33mbutton[39m[33m>[39m
+ [90m 661 |[39m           [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+[31m[1m>[22m[39m[90m 662 |[39m         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+ [90m     |[39m               [31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 663 |[39m       [33m<[39m[33m/[39m[33msection[39m[33m>[39m
+ [90m     |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 664 |[39m     [33m<[39m[33m/[39m[33m>[39m
+ [90m 665 |[39m   )[33m;[39m
+ [90m 666 |[39m }[0m
+
+Expected '</', got 'jsx text (
+      )'
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+ GET / 500 in 118ms
+ ✓ Compiled in 326ms
+ ✓ Compiled / in 40ms
+ GET / 200 in 697ms
+ ✓ Compiled in 174ms
+ ✓ Compiled in 81ms
+ GET / 200 in 356ms
+ ✓ Compiled in 51ms
+ ✓ Compiled in 116ms
+ ✓ Compiled in 190ms
+ ✓ Compiled in 188ms
+ ✓ Compiled in 80ms
+ GET / 200 in 334ms
+ ✓ Compiled in 167ms
+ ✓ Compiled in 141ms
+ ✓ Compiled in 218ms
+ GET / 200 in 396ms
+ ✓ Compiled in 187ms
+ GET / 200 in 315ms
+ ✓ Compiled in 315ms
+ ✓ Compiled in 373ms
+ ✓ Compiled in 168ms
+ ✓ Compiled in 130ms
+ ✓ Compiled in 181ms
+ ✓ Compiled in 259ms
+ ✓ Compiled in 340ms
+ ✓ Compiled in 244ms
+ ✓ Compiled / in 53ms
+ ⨯ ReferenceError: Header is not defined
+    at RootLayout (app/layout.tsx:54:9)
+  52 |     <html lang="en">
+  53 |       <body className="min-h-screen flex flex-col">
+> 54 |         <Header />
+     |         ^
+  55 |         <main className="flex-1 pt-16">{children}</main>
+  56 |         <Footer />
+  57 |       </body> {
+  digest: '1981114617'
+}
+ GET / 200 in 263ms
+ ⨯ ReferenceError: Header is not defined
+    at RootLayout (app/layout.tsx:54:9)
+  52 |     <html lang="en">
+  53 |       <body className="min-h-screen flex flex-col">
+> 54 |         <Header />
+     |         ^
+  55 |         <main className="flex-1 pt-16">{children}</main>
+  56 |         <Footer />
+  57 |       </body> {
+  digest: '1981114617'
+}
+ GET / 200 in 82ms
+ ⨯ ReferenceError: Header is not defined
+    at RootLayout (app/layout.tsx:54:9)
+  52 |     <html lang="en">
+  53 |       <body className="min-h-screen flex flex-col">
+> 54 |         <Header />
+     |         ^
+  55 |         <main className="flex-1 pt-16">{children}</main>
+  56 |         <Footer />
+  57 |       </body> {
+  digest: '1981114617'
+}
+ GET / 200 in 35ms
+ ⨯ ReferenceError: Header is not defined
+    at RootLayout (app/layout.tsx:54:9)
+  52 |     <html lang="en">
+  53 |       <body className="min-h-screen flex flex-col">
+> 54 |         <Header />
+     |         ^
+  55 |         <main className="flex-1 pt-16">{children}</main>
+  56 |         <Footer />
+  57 |       </body> {
+  digest: '1981114617'
+}
+ GET / 200 in 43ms
+ ⨯ ReferenceError: Header is not defined
+    at RootLayout (app/layout.tsx:54:9)
+  52 |     <html lang="en">
+  53 |       <body className="min-h-screen flex flex-col">
+> 54 |         <Header />
+     |         ^
+  55 |         <main className="flex-1 pt-16">{children}</main>
+  56 |         <Footer />
+  57 |       </body> {
+  digest: '1981114617'
+}
+ GET / 200 in 36ms
+ ⨯ ReferenceError: Header is not defined
+    at RootLayout (app/layout.tsx:54:9)
+  52 |     <html lang="en">
+  53 |       <body className="min-h-screen flex flex-col">
+> 54 |         <Header />
+     |         ^
+  55 |         <main className="flex-1 pt-16">{children}</main>
+  56 |         <Footer />
+  57 |       </body> {
+  digest: '1981114617'
+}
+ GET / 200 in 30ms
+ ⨯ ReferenceError: Header is not defined
+    at RootLayout (app/layout.tsx:54:9)
+  52 |     <html lang="en">
+  53 |       <body className="min-h-screen flex flex-col">
+> 54 |         <Header />
+     |         ^
+  55 |         <main className="flex-1 pt-16">{children}</main>
+  56 |         <Footer />
+  57 |       </body> {
+  digest: '1981114617'
+}
+ GET / 200 in 28ms
+ ✓ Compiled in 168ms
+ ✓ Compiled / in 31ms
+ GET / 200 in 602ms
+ ✓ Compiled in 370ms
+ ✓ Compiled in 235ms
+ ✓ Compiled in 419ms
+ ✓ Compiled / in 52ms
+ ⨯ ReferenceError: Footer is not defined
+    at RootLayout (app/layout.tsx:54:9)
+  52 |       <body className="min-h-screen flex flex-col">
+  53 |         <main className="flex-1">{children}</main>
+> 54 |         <Footer />
+     |         ^
+  55 |       </body>
+  56 |     </html>
+  57 |   ); {
+  digest: '4068977367'
+}
+ GET / 200 in 449ms
+ ⨯ ReferenceError: Footer is not defined
+    at RootLayout (app/layout.tsx:54:9)
+  52 |       <body className="min-h-screen flex flex-col">
+  53 |         <main className="flex-1">{children}</main>
+> 54 |         <Footer />
+     |         ^
+  55 |       </body>
+  56 |     </html>
+  57 |   ); {
+  digest: '4068977367'
+}
+ ⨯ ReferenceError: Footer is not defined
+    at RootLayout (app/layout.tsx:54:9)
+  52 |       <body className="min-h-screen flex flex-col">
+  53 |         <main className="flex-1">{children}</main>
+> 54 |         <Footer />
+     |         ^
+  55 |       </body>
+  56 |     </html>
+  57 |   ); {
+  digest: '4068977367'
+}
+ GET / 200 in 168ms
+ GET / 500 in 398ms
+ ⨯ ReferenceError: Footer is not defined
+    at RootLayout (app/layout.tsx:54:9)
+  52 |       <body className="min-h-screen flex flex-col">
+  53 |         <main className="flex-1">{children}</main>
+> 54 |         <Footer />
+     |         ^
+  55 |       </body>
+  56 |     </html>
+  57 |   ); {
+  digest: '4068977367'
+}
+ ✓ Compiled in 160ms
+ ✓ Compiled / in 217ms
+ GET / 200 in 719ms
+ ✓ Compiled in 275ms
+ ✓ Compiled in 255ms
+ ✓ Compiled in 176ms
+ ✓ Compiled in 141ms
+ ✓ Compiled in 80ms
+ ✓ Compiled in 215ms
+ ✓ Compiled in 116ms
+ ✓ Compiled in 142ms
+ ✓ Compiled in 148ms
+ ✓ Compiled in 139ms
+ ✓ Compiled in 738ms
+   Reload env: .env.local
+ GET / 200 in 355ms
+   Reload env: .env.local
+ GET / 200 in 313ms
+Email sent successfully: { data: { id: '5c78e48d-ea2e-4be6-b342-c4c2fd0c8dc4' }, error: null }
+ POST /api/contact 200 in 753ms
+ ✓ Compiled in 228ms
+ ✓ Compiled in 166ms
+ ✓ Compiled in 94ms
