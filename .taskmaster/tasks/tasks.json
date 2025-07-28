@@ -1,0 +1,628 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Project Setup & Core Infrastructure",
+        "description": "Initialize a new Next.js project with Tailwind CSS. Set up the basic project structure, including folders for components, pages, and styles. Configure the repository and Vercel for deployment.",
+        "details": "Tech Stack: Next.js (React), Tailwind CSS. Hosting: Vercel. Create a new Git repository and push the initial setup. Configure ESLint and Prettier for code quality.",
+        "testStrategy": "Verify that the Next.js development server runs successfully. Confirm Tailwind CSS classes are applied correctly. Initial deployment to a Vercel preview environment works.",
+        "priority": "high",
+        "dependencies": [],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create Next.js project with basic configuration",
+            "description": "Initialize a new Next.js application using create-next-app and configure basic project settings",
+            "dependencies": [],
+            "details": "Run `npx create-next-app@latest` with TypeScript and App Router. Configure next.config.js for optimization settings. Set up basic package.json scripts for development, build, and start commands.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Install and configure Tailwind CSS",
+            "description": "Set up Tailwind CSS framework with proper configuration and base styles",
+            "dependencies": [
+              1
+            ],
+            "details": "Install Tailwind CSS, PostCSS, and Autoprefixer. Configure tailwind.config.js with content paths and custom theme settings. Set up globals.css with Tailwind directives and base styles.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Create project folder structure and organization",
+            "description": "Establish proper folder hierarchy for components, pages, styles, and other project assets",
+            "dependencies": [
+              1
+            ],
+            "details": "Create folders for: /components (UI components), /app (pages with App Router), /public (static assets), /lib (utilities), /types (TypeScript definitions). Set up barrel exports and organize imports structure.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "Configure development tools (ESLint and Prettier)",
+            "description": "Set up code quality and formatting tools with project-specific configurations",
+            "dependencies": [
+              2,
+              3
+            ],
+            "details": "Configure ESLint with Next.js recommended rules and TypeScript support. Set up Prettier with consistent formatting rules. Create .eslintrc.json and .prettierrc configuration files. Add lint scripts to package.json.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 5,
+            "title": "Initialize Git repository and configure Vercel deployment",
+            "description": "Set up version control and automated deployment pipeline",
+            "dependencies": [
+              4
+            ],
+            "details": "Initialize Git repository with proper .gitignore for Next.js. Create initial commit with project setup. Connect repository to Vercel for automatic deployments. Configure environment variables and deployment settings.",
+            "status": "in-progress",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Implement Global Layout & Navigation",
+        "description": "Create the main application layout including a global header and a sticky footer. Implement the primary navigation menu based on the sitemap (Home, About, Projects, Skills & Experience, Contact).",
+        "details": "The global header should feature a logo/name on the top-left and menu items on the top-right. The sticky footer should be minimal with copyright info. The layout must be responsive.",
+        "testStrategy": "Check that the header and footer are present on all pages. Verify navigation links route to the correct pages. Test responsiveness of the header menu, ensuring it works on mobile screens.",
+        "priority": "high",
+        "dependencies": [
+          1
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create global layout component structure",
+            "description": "Set up the main layout component with header, main content area, and footer slots using Next.js layout patterns",
+            "dependencies": [],
+            "details": "Create a Layout component that wraps all pages with consistent header and footer structure. Implement proper semantic HTML structure with header, main, and footer elements. Set up the component to accept children for page content.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Implement responsive header with logo and navigation",
+            "description": "Build the header component with logo/name on left and navigation menu on right, ensuring responsive design",
+            "dependencies": [
+              1
+            ],
+            "details": "Create header component with logo/name positioned on top-left and navigation menu on top-right. Implement navigation links for Home, About, Projects, Skills & Experience, and Contact pages. Use Tailwind CSS for styling and responsive breakpoints.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Build sticky footer component",
+            "description": "Create the minimal sticky footer with copyright information that stays at bottom of viewport",
+            "dependencies": [
+              1
+            ],
+            "details": "Implement a sticky footer component with minimal design containing copyright information. Ensure footer sticks to bottom of viewport when content is short and appears below content when page is long. Style with Tailwind CSS.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "Ensure responsive navigation behavior across devices",
+            "description": "Implement mobile-friendly navigation with hamburger menu and test responsive behavior on all screen sizes",
+            "dependencies": [
+              2,
+              3
+            ],
+            "details": "Add mobile hamburger menu for smaller screens. Implement smooth transitions between desktop and mobile navigation states. Test navigation functionality across different device breakpoints. Ensure touch-friendly interaction on mobile devices.",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Develop the Home Page",
+        "description": "Build the Home page, including the hero section with a headshot, tagline, and primary call-to-action buttons. Implement the specified subtle fade-in entry animation.",
+        "details": "Hero Section Content: Name, tagline ('AI‑First Developer & Problem Solver'), headshot. CTAs: 'View Projects', 'Download Résumé', 'Contact Me'. Animation: Subtle fade-in on hero text on page load.",
+        "testStrategy": "Verify all visual elements are present as per the PRD. Test that CTA buttons link correctly. Confirm the entry animation plays smoothly on page load.",
+        "priority": "high",
+        "dependencies": [
+          2
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Build Hero Section Layout and Content",
+            "description": "Create the hero section structure with headshot, name, tagline, and proper layout styling using Tailwind CSS",
+            "dependencies": [],
+            "details": "Implement the hero section containing: headshot image, name display, tagline ('AI‑First Developer & Problem Solver'), and proper responsive layout. Use Tailwind CSS for styling with generous white space following the minimalist aesthetic. Ensure proper image optimization and responsive design for mobile and desktop.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Implement Call-to-Action Buttons with Routing",
+            "description": "Add the three primary CTA buttons with proper Next.js routing to respective pages",
+            "dependencies": [
+              1
+            ],
+            "details": "Create three call-to-action buttons: 'View Projects' (linking to projects gallery), 'Download Résumé' (linking to PDF), and 'Contact Me' (linking to contact page). Implement proper Next.js Link components for client-side routing. Style buttons consistently with the site's design system and ensure they're accessible and responsive.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Add Fade-in Animation Effects",
+            "description": "Implement subtle fade-in entry animation for hero text elements on page load",
+            "dependencies": [
+              1,
+              2
+            ],
+            "details": "Create smooth fade-in animations for the hero section elements (name, tagline, buttons) that trigger on page load. Use CSS transitions or a lightweight animation library to achieve subtle, professional entry effects. Ensure animations are performant and don't cause layout shifts. Test animation timing and easing for optimal user experience.",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Develop the About Page",
+        "description": "Create the 'About' page, featuring a short bio, a timeline component for education and the Gauntlet AI challenger experience, and a link to download the résumé.",
+        "details": "Content includes a 3-4 sentence bio, a visual timeline component, and a prominent downloadable résumé link (PDF). The layout should adhere to the minimalist aesthetic with generous white space.",
+        "testStrategy": "Confirm all content sections are present. Test the résumé download link. Check that the timeline component is readable and well-structured on both desktop and mobile devices.",
+        "priority": "medium",
+        "dependencies": [
+          2
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create Bio Section Layout",
+            "description": "Design and implement the biographical content section with proper typography and spacing",
+            "dependencies": [],
+            "details": "Create a clean, readable bio section with 3-4 sentences about background and experience. Use consistent typography with the site's design system and ensure generous white space for the minimalist aesthetic. Include proper semantic HTML structure.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Build Interactive Timeline Component",
+            "description": "Develop a visual timeline component displaying education and Gauntlet AI challenger experience",
+            "dependencies": [
+              1
+            ],
+            "details": "Create a custom timeline component that displays chronological events with proper visual hierarchy. Include education milestones and Gauntlet AI challenger experience. Ensure the component is accessible and uses smooth animations for interactions.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Implement Résumé Download Functionality",
+            "description": "Add a prominent downloadable résumé link with proper PDF handling",
+            "dependencies": [
+              1
+            ],
+            "details": "Create a download button/link that serves the résumé PDF file. Ensure proper file handling, download attribution, and error states. Style the download link to be prominent and consistent with the site's CTA design patterns.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "Ensure Responsive Design Across Devices",
+            "description": "Optimize the About page layout for mobile, tablet, and desktop viewports",
+            "dependencies": [
+              2,
+              3
+            ],
+            "details": "Test and adjust all components (bio, timeline, download link) for responsive behavior. Ensure the timeline component remains readable on mobile devices and that the layout maintains the minimalist aesthetic across all screen sizes.",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Build Project Showcase (Gallery & Detail Pages)",
+        "description": "Develop the project gallery page with 6 project cards and create the reusable template for individual project detail pages.",
+        "details": "Gallery: A grid of 6 cards, each with a thumbnail video still and project title. Detail Page: Must include an embedded autoplay/muted video, a link to the GitHub repo, a 2-3 sentence summary, tech stack badges, and a 'Key Challenges & Solutions' section.",
+        "testStrategy": "Test navigation from the gallery to detail pages. Verify video embeds play correctly and are responsive. Check that all elements on the detail page are present and that repository links are functional.",
+        "priority": "high",
+        "dependencies": [
+          2
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create project gallery grid layout",
+            "description": "Build the main gallery page with a responsive grid layout that displays 6 project cards in an organized, visually appealing manner",
+            "dependencies": [],
+            "details": "Implement a responsive CSS Grid or Flexbox layout that adapts to different screen sizes. The grid should accommodate exactly 6 project cards with proper spacing and alignment. Include proper semantic HTML structure and accessibility considerations.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Build individual project cards with video thumbnails",
+            "description": "Create reusable project card components that display video thumbnail stills and project titles for each of the 6 projects",
+            "dependencies": [
+              1
+            ],
+            "details": "Design and implement project card components with video thumbnail images, project titles, and hover effects. Cards should be clickable and include proper loading states. Ensure consistent styling and responsive behavior across all cards.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Develop reusable project detail page template",
+            "description": "Create a dynamic template for individual project detail pages that can be reused for all projects with different content",
+            "dependencies": [],
+            "details": "Build a flexible page template that includes sections for embedded video, GitHub repository link, project summary, tech stack badges, and Key Challenges & Solutions section. Implement dynamic routing to handle different project URLs and content loading.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "Implement responsive video embeds with autoplay",
+            "description": "Add functional video embedding system with autoplay and muted settings that works responsively across all device sizes",
+            "dependencies": [
+              3
+            ],
+            "details": "Implement video embed functionality with autoplay/muted attributes for accessibility compliance. Ensure videos are responsive and maintain aspect ratio across different screen sizes. Handle video loading states and fallback options for unsupported formats.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 5,
+            "title": "Create navigation between gallery and detail pages",
+            "description": "Implement routing and navigation system that connects the project gallery to individual project detail pages with smooth transitions",
+            "dependencies": [
+              2,
+              4
+            ],
+            "details": "Set up Next.js dynamic routing for project detail pages. Implement navigation from gallery cards to detail pages and back navigation. Add loading states and smooth transitions between pages. Ensure proper URL structure and browser history handling.",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Create Skills & Experience Page",
+        "description": "Implement the 'Skills & Experience' page, showcasing key technical skills in a grid or bar format and a summary of professional experience.",
+        "details": "The skills section should visually represent technologies like JavaScript, Three.js, AI Agents, and REST APIs. The experience section can be a timeline or bulleted list.",
+        "testStrategy": "Verify the layout of the skills section is clean and responsive. Ensure the content is formatted clearly. The page structure should allow for tracking the 'scroll depth' metric.",
+        "priority": "medium",
+        "dependencies": [
+          2
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Design and implement skills visualization component",
+            "description": "Create a responsive skills section with visual representation of technical skills (JavaScript, Three.js, AI Agents, REST APIs) in grid or bar format",
+            "dependencies": [],
+            "details": "Build a visually appealing skills component that can display technologies in either a grid layout with skill cards or bar chart format showing proficiency levels. Ensure responsive design and clean visual hierarchy.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Create experience timeline or list section",
+            "description": "Implement the professional experience section with timeline or bulleted list format displaying career history and key achievements",
+            "dependencies": [
+              1
+            ],
+            "details": "Design and build an experience section that presents professional background in an easy-to-read format. Include relevant work experience, projects, and achievements with proper spacing and typography.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Implement scroll depth tracking analytics support",
+            "description": "Ensure the page structure and components are configured to support scroll depth tracking analytics integration",
+            "dependencies": [
+              1,
+              2
+            ],
+            "details": "Structure the page components with appropriate data attributes or tracking hooks to enable scroll depth analytics. Verify page sections are properly segmented for meaningful scroll tracking metrics.",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Implement Contact Form & Backend Logic",
+        "description": "Build the contact form UI and create a serverless function to handle submissions. Integrate an email service (SendGrid) and spam protection (reCAPTCHA v3).",
+        "details": "Frontend: A simple form with Name, Email, and Message fields. Backend: A Vercel Serverless Function (Node.js) to process form data and send an email via the SendGrid API. Implement success/error feedback messages on the form.",
+        "testStrategy": "Test form submission with both valid and invalid data. Verify that success and error messages are displayed correctly to the user. Confirm a test email is successfully delivered via the serverless function.",
+        "priority": "high",
+        "dependencies": [
+          2
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Build Contact Form UI with Validation",
+            "description": "Create the contact form interface with Name, Email, and Message fields, including client-side validation and responsive design",
+            "dependencies": [],
+            "details": "Implement a clean, accessible contact form with proper form validation (required fields, email format validation). Include proper labels, error states, and responsive styling that matches the minimalist design aesthetic. Add form submission states (loading, success, error) with appropriate UI feedback.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Create Vercel Serverless Function",
+            "description": "Develop a Node.js serverless function to handle form submissions and process contact data",
+            "dependencies": [],
+            "details": "Create a Vercel serverless function at /api/contact that accepts POST requests with form data. Implement proper request validation, sanitization, and error handling. Structure the function to integrate with email service and spam protection middleware.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Integrate SendGrid Email Service",
+            "description": "Set up SendGrid API integration to send emails from the contact form submissions",
+            "dependencies": [
+              2
+            ],
+            "details": "Configure SendGrid API with proper authentication and email templates. Implement email sending functionality within the serverless function, including proper error handling for failed deliveries. Set up email templates for both the site owner notification and optional user confirmation.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "Implement reCAPTCHA v3 Spam Protection",
+            "description": "Add Google reCAPTCHA v3 integration for invisible spam protection on form submissions",
+            "dependencies": [
+              1,
+              2
+            ],
+            "details": "Integrate reCAPTCHA v3 on the frontend form and validate the token on the backend serverless function. Configure appropriate score thresholds and fallback mechanisms. Ensure the implementation is invisible to users while effectively blocking spam submissions.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 5,
+            "title": "Add Form Submission Feedback States",
+            "description": "Implement comprehensive user feedback for all form submission states including loading, success, and error scenarios",
+            "dependencies": [
+              1,
+              3,
+              4
+            ],
+            "details": "Create UI components and logic to handle loading states during submission, success messages upon successful email delivery, and detailed error messages for various failure scenarios. Ensure feedback is accessible and provides clear next steps to users.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 6,
+            "title": "Test Email Delivery Functionality",
+            "description": "Comprehensive testing of the complete contact form flow including email delivery verification",
+            "dependencies": [
+              3,
+              4,
+              5
+            ],
+            "details": "Test form submission with valid and invalid data, verify success and error message display, confirm test emails are delivered successfully, test spam protection functionality, and validate the complete user experience across different devices and browsers.",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Content Integration & SEO Optimization",
+        "description": "Populate all pages with final copy, project details, videos, and the résumé PDF. Implement page-specific SEO metadata, including titles, descriptions, and Open Graph tags.",
+        "details": "Gather all final content. Write unique `<title>` and `<meta description>` for each page. Configure Open Graph tags for social sharing, ensuring project pages show a video thumbnail.",
+        "testStrategy": "Review all pages to ensure content is final and accurate. Use a browser extension to verify metadata on each page. Test sharing a project link on a social media simulator to check the Open Graph card.",
+        "priority": "medium",
+        "dependencies": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Gather and populate final content across all pages",
+            "description": "Collect and add all final copy, project details, videos, and résumé PDF to their respective pages",
+            "dependencies": [],
+            "details": "Gather final content for all pages including bio text, project descriptions, video files, résumé PDF, and any other copy. Populate the Home, About, Projects gallery, individual project detail pages, Skills & Experience, and Contact pages with this final content. Ensure all videos are properly embedded and the résumé PDF is accessible for download.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Implement page-specific SEO metadata and titles",
+            "description": "Create unique titles and meta descriptions for each page to optimize search engine visibility",
+            "dependencies": [],
+            "details": "Write and implement unique `<title>` tags and `<meta name=\"description\">` content for each page (Home, About, Projects gallery, individual project pages, Skills & Experience, Contact). Ensure titles are descriptive and under 60 characters, meta descriptions are compelling and under 160 characters. Include relevant keywords naturally while maintaining readability.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Configure Open Graph tags for social sharing",
+            "description": "Set up Open Graph meta tags to control how pages appear when shared on social media platforms",
+            "dependencies": [],
+            "details": "Implement Open Graph tags including og:title, og:description, og:image, og:url, and og:type for all pages. For project pages, ensure og:image shows a video thumbnail or project screenshot. Configure Twitter Card meta tags as well. Test that social sharing previews display correctly with appropriate images and descriptions.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "Set up video thumbnails for project sharing",
+            "description": "Configure video thumbnails and preview images specifically for project pages when shared on social platforms",
+            "dependencies": [],
+            "details": "Extract or create thumbnail images from project videos to serve as og:image for social sharing. Ensure thumbnails are properly sized (1200x630px recommended) and represent the project effectively. Configure fallback images and test that project links shared on social media display with appropriate video thumbnails rather than generic placeholders.",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Accessibility & Responsive Testing",
+        "description": "Conduct a thorough review of the entire site to ensure it meets WCAG 2.1 AA standards and is fully responsive on all target devices down to 320px width.",
+        "details": "Audit for semantic HTML, alt tags for all images, keyboard navigability, and color contrast ratios (≥ 4.5:1). Test on various screen sizes using browser dev tools and real devices.",
+        "testStrategy": "Run automated accessibility checks (e.g., Axe DevTools). Manually test keyboard navigation through all interactive elements. Resize the browser window from desktop to 320px to check for layout breaks.",
+        "priority": "high",
+        "dependencies": [
+          8
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Conduct automated accessibility audits",
+            "description": "Run comprehensive automated accessibility testing using tools like Axe DevTools, WAVE, and Lighthouse to identify WCAG violations across all pages",
+            "dependencies": [],
+            "details": "Install and configure accessibility testing tools. Run audits on all pages including Home, About, Projects, Skills & Experience, and Contact. Document all identified issues with severity levels and WCAG criteria references. Generate comprehensive audit reports.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Implement proper semantic HTML and ARIA labels",
+            "description": "Review and fix semantic HTML structure, add appropriate ARIA labels, roles, and properties to ensure screen reader compatibility",
+            "dependencies": [
+              1
+            ],
+            "details": "Fix semantic HTML issues identified in audit. Add proper heading hierarchy (h1-h6). Implement ARIA labels for interactive elements, form fields, and navigation. Add alt text for all images. Ensure proper landmark roles are used.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Test and ensure keyboard navigation functionality",
+            "description": "Verify full keyboard accessibility including tab order, focus indicators, and keyboard shortcuts for all interactive elements",
+            "dependencies": [
+              2
+            ],
+            "details": "Test tab navigation through all pages ensuring logical tab order. Verify focus indicators are visible and clear. Test keyboard shortcuts and ensure all interactive elements are reachable via keyboard. Fix any keyboard traps or inaccessible elements.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "Verify color contrast ratios meet WCAG standards",
+            "description": "Audit and fix color contrast issues to ensure all text meets WCAG 2.1 AA standards (4.5:1 ratio for normal text, 3:1 for large text)",
+            "dependencies": [
+              1
+            ],
+            "details": "Use color contrast analyzers to check all text/background combinations. Identify and fix contrast issues in navigation, buttons, form fields, and content areas. Ensure interactive states (hover, focus) maintain proper contrast ratios.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 5,
+            "title": "Comprehensive responsive testing across device sizes",
+            "description": "Test layout and functionality across all target device sizes from 320px to desktop, ensuring proper responsive behavior",
+            "dependencies": [
+              3,
+              4
+            ],
+            "details": "Test on real devices and browser dev tools from 320px mobile to large desktop screens. Verify layout doesn't break, content remains readable, and interactive elements work properly. Test portrait and landscape orientations on mobile devices.",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "title": "Performance Optimization, Analytics & Launch",
+        "description": "Optimize the site for performance to meet the sub-1-second load time and Lighthouse score goals. Integrate analytics and deploy the final version to the production domain.",
+        "details": "Optimize images, lazy-load offscreen content, and minify assets. Set up Google Analytics or Plausible. Configure the production domain on Vercel, set up DNS records, and deploy the main branch. Ensure HTTPS is enforced.",
+        "testStrategy": "Run Lighthouse reports to check scores for Performance, Accessibility, and Best Practices (Target ≥ 90). Use PageSpeed Insights to verify load times on a simulated 3G connection. Confirm analytics events are being tracked.",
+        "priority": "high",
+        "dependencies": [
+          9
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Optimize Images and Implement Lazy Loading",
+            "description": "Compress all images, convert to modern formats (WebP/AVIF), and implement lazy loading for offscreen content to improve load times.",
+            "dependencies": [],
+            "details": "Use image optimization tools to compress project images and headshots. Convert images to WebP format with fallbacks. Implement lazy loading for images below the fold and project videos. Minify CSS and JavaScript assets.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Set Up and Configure Analytics Tracking",
+            "description": "Integrate Google Analytics or Plausible analytics with proper event tracking for user interactions and page views.",
+            "dependencies": [],
+            "details": "Choose between Google Analytics 4 or Plausible for privacy-focused analytics. Set up tracking for page views, CTA clicks, resume downloads, and project interactions. Configure goals and conversion tracking.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Run Performance Audits and Implement Optimizations",
+            "description": "Conduct Lighthouse audits and PageSpeed Insights tests, then implement necessary optimizations to achieve target scores.",
+            "dependencies": [
+              1
+            ],
+            "details": "Run comprehensive Lighthouse audits targeting ≥90 scores for Performance, Accessibility, and Best Practices. Test load times on simulated 3G connections. Optimize Core Web Vitals (LCP, FID, CLS). Implement code splitting and tree shaking if needed.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "Configure Production Domain and DNS Settings",
+            "description": "Set up the production domain on Vercel and configure DNS records for the custom domain.",
+            "dependencies": [],
+            "details": "Configure custom domain in Vercel project settings. Set up DNS A and CNAME records with domain provider. Verify domain propagation and SSL certificate provisioning. Configure redirects if needed.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 5,
+            "title": "Deploy to Production with HTTPS",
+            "description": "Deploy the optimized site to production domain with HTTPS enforcement and configure deployment settings.",
+            "dependencies": [
+              3,
+              4
+            ],
+            "details": "Deploy main branch to production domain. Ensure HTTPS is enforced with automatic redirects from HTTP. Configure Vercel deployment settings for optimal performance. Set up branch protection and deployment previews.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 6,
+            "title": "Conduct Final Performance Validation Testing",
+            "description": "Perform comprehensive testing of the live production site to validate all performance targets and functionality.",
+            "dependencies": [
+              2,
+              5
+            ],
+            "details": "Test sub-1-second load times on production domain. Validate Lighthouse scores meet ≥90 targets. Confirm analytics tracking is working correctly. Test all functionality including downloads, navigation, and responsive design on the live site.",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "created": "2025-07-28T17:20:12.775Z",
+      "updated": "2025-07-28T17:42:24.499Z",
+      "description": "Tasks for master context"
+    }
+  }
+}

@@ -1,0 +1,215 @@
+**Product Requirements Document (PRD): Personal Portfolio Website for Sadaqat Ali**
+
+---
+
+## 1. Overview
+
+**Title:** Sadaqat.Ai
+**Author:** Sadaqat Ali
+**Date:** July 28, 2025
+**Purpose:**
+Create a clean, elegant, recruiter‑ready portfolio website to showcase six Gauntlet AI projects and professional background. The site should reflect a minimalist, Apple/Tesla‑inspired aesthetic and drive visitors toward contacting Sadaqat for opportunities.
+
+---
+
+## 2. Objectives & Success Metrics
+
+| Objective                                    | Metric                                                 |
+| -------------------------------------------- | ------------------------------------------------------ |
+| Present professional identity & story        | Avg. time on “About” section ≥ 60 s                    |
+| Showcase six Gauntlet AI projects            | Visitor clicks on at least 3 project pages per session |
+| Highlight technical skills & experience      | “Skills” section scroll depth ≥ 80% of page height     |
+| Drive recruiter contact                      | “Contact” form submissions ≥ 5 per week                |
+| Maintain fast load & mobile‑first experience | Page load ≤ 1 s on mobile (3G test)                    |
+
+---
+
+## 3. Target Users & Use Cases
+
+1. **Recruiters / Hiring Managers**
+
+   * **Goal:** Quickly assess project depth, code proficiency, and presentation skills
+   * **Primary Flows:**
+
+     * Land on Home → Learn key highlights
+     * Navigate to Projects → View video + repo link + summary
+     * Contact via form or LinkedIn button
+
+2. **Peers / Fellow Engineers**
+
+   * **Goal:** Explore technical details and code quality
+   * **Primary Flows:**
+
+     * Access Projects → Read “Tech Stack & Challenges”
+     * Browse Skills & Experience → Download resume
+
+3. **Personal Branding / Networking**
+
+   * **Goal:** Reinforce personal story and unique style
+   * **Primary Flows:**
+
+     * Read “About Me” → See timeline of background
+     * Click Social Links → LinkedIn, GitHub, Email
+
+---
+
+## 4. Sitemap & Navigation
+
+```
+Home
+ ├─ About
+ ├─ Projects
+ │   ├─ Project 1
+ │   ├─ Project 2
+ │   ├─ …
+ │   └─ Project 6
+ ├─ Skills & Experience
+ └─ Contact
+```
+
+* **Global header:** Logo/name (top-left), menu items (top-right)
+* **Sticky footer:** Minimal links + copyright
+
+---
+
+## 5. Functional Requirements
+
+### 5.1 Home
+
+* Hero section with name, tagline (“AI‑First Developer & Problem Solver”), headshot
+* Call‑to‑action buttons: “View Projects” / “Download Résumé” / “Contact Me”
+* Subtle entry animation (fade‑in hero text)
+
+### 5.2 About
+
+* Brief bio (3–4 sentences) including age, location (Columbus, OH), interests
+* Timeline component (education, Gauntlet AI challenger)
+* Downloadable résumé link (PDF)
+
+### 5.3 Projects
+
+* Gallery grid: 6 cards (thumbnail video still + project title)
+* On‑click → detailed project page:
+
+  * Embedded autoplay‑muted video (16:9, responsive)
+  * Repo link (GitHub icon + “View Code”)
+  * 2–3‑sentence summary
+  * Tech stack badges (e.g. React, Three.js, Node.js)
+  * “Key Challenges & Solutions” bullet list
+
+### 5.4 Skills & Experience
+
+* Horizontal bar or icon grid of key skills (JavaScript, Three.js, AI Agents, REST APIs, etc.)
+* Short summary of professional experience (timeline or bullets)
+
+### 5.5 Contact
+
+* Simple form: Name, Email, Message
+* “Send” button with success/error feedback
+* Alternative: direct LinkedIn button (“Connect on LinkedIn”)
+
+---
+
+## 6. Non‑Functional Requirements
+
+* **Performance:**
+
+  * First Contentful Paint ≤ 1 s on mobile (3G)
+  * Lighthouse score ≥ 90 (Performance, Accessibility, Best Practices)
+* **Responsiveness:**
+
+  * Mobile‑first design, works flawlessly on screens down to 320 px
+* **Accessibility:**
+
+  * WCAG 2.1 AA compliance
+  * Proper semantic HTML, alt tags, color contrast ≥ 4.5:1
+* **SEO & Metadata:**
+
+  * Unique `<title>` and `<meta description>` per page
+  * Open Graph tags for social sharing (project pages show video thumbnail)
+* **Security:**
+
+  * HTTPS mandatory
+  * Form submission via serverless function with spam protection (reCAPTCHA v3)
+
+---
+
+## 7. Visual & Interaction Design
+
+* **Style Inspiration:** Apple & Tesla
+
+  * **Color Palette:**
+
+    * Whites & light grays (#FFFFFF, #F2F2F2)
+    * Charcoal accents (#333333)
+    * Accent color for CTAs (#007AFF)
+  * **Typography:**
+
+    * Headings: San Francisco‑style sans‑serif (e.g. SF Pro / system‑ui)
+    * Body: System font stack, line-height 1.5
+  * **Spacing & Layout:**
+
+    * Generous white space (padding ≥ 2 rem)
+    * Grid‑based sections, consistent margins
+  * **Animations:**
+
+    * Subtle fade/slide‑in on scroll
+    * Hover effects on buttons (scale 1.03)
+
+---
+
+## 8. Technical Stack & Architecture
+
+* **Frontend:**
+
+  * Framework: Next.js (React)
+  * Styling: Tailwind CSS (utility‑first)
+  * Video Embeds: HTML5 `<video>` or lightweight player (Plyr)
+* **Hosting & Deployment:**
+
+  * Vercel (serverless, CDN delivered)
+* **Form Handling:**
+
+  * Vercel Serverless Functions (Node.js)
+  * Email delivery via SendGrid API
+* **Analytics:**
+
+  * Google Analytics / Plausible or similar privacy‑friendly tracker
+
+---
+
+## 9. User Stories
+
+| ID  | As a…          | I want to…                             | So that…                                    |
+| --- | -------------- | -------------------------------------- | ------------------------------------------- |
+| US1 | Recruiter      | see my key highlight & CTA immediately | I can quickly navigate to Projects/Contact  |
+| US2 | Hiring Manager | watch project videos in‑page           | I can evaluate my technical work easily     |
+| US3 | Peer Engineer  | view tech stack badges                 | I know which technologies I’m proficient in |
+| US4 | Visitor        | submit a contact form                  | I can request more information or interview |
+| US5 | Self           | update projects easily                 | New work can be showcased without re‑coding |
+
+---
+
+## 10. Milestones & Timeline
+
+| Phase                  | Deliverables                        | Estimated Duration |
+| ---------------------- | ----------------------------------- | ------------------ |
+| 1. Discovery & Design  | Wireframes, Moodboard, Content plan | 3 days             |
+| 2. Development         | Build pages & components            | 5 days             |
+| 3. Content Integration | Embed videos, write copy            | 2 days             |
+| 4. Testing & QA        | Responsive & accessibility testing  | 2 days             |
+| 5. Launch              | DNS setup, deploy to production     | 1 day              |
+
+---
+
+## 11. Next Steps
+
+1. Finalize copy for About & each Project.
+2. Collect video files (hosted on CDN or YouTube unlisted).
+3. Prepare résumé PDF and social profiles.
+4. Kick off design in Figma / developer hand‑off.
+5. Feed this PRD into your coding agent (Cursor, Claude Code, etc.) to begin implementation.
+
+---
+
+*This PRD provides the clear, structured guidance needed for a coding agent to build a fast, elegant portfolio that reflects your personal brand and drives recruiter engagement.*
