@@ -14,10 +14,11 @@ export default function Home() {
   const projects = [
     {
       id: 1,
-      title: "AI Chat Assistant",
-      description: "Advanced conversational AI with natural language processing",
+      title: "Wordwise",
+      description: "AI writing assistant for sales teams with personalization and email optimization",
       thumbnail: "/project-thumbnails/placeholder.svg",
       videoUrl: "/project-videos/placeholder.mp4",
+      embedUrl: "https://www.loom.com/embed/363ee9d6b7784dbdb11d0b47709175f9?sid=d2c5a7ac-5db3-4ec9-9fb1-7f1656494846",
     },
     {
       id: 2,
@@ -28,17 +29,19 @@ export default function Home() {
     },
     {
       id: 3,
-      title: "ML Data Pipeline",
-      description: "Scalable data processing infrastructure for machine learning",
+      title: "Service Call Manager",
+      description: "Desktop app for managing appliance repairs with AI-powered workflow automation",
       thumbnail: "/project-thumbnails/placeholder.svg",
       videoUrl: "/project-videos/placeholder.mp4",
+      embedUrl: "https://www.loom.com/embed/cba9b665b5ca49979a89bfda5fbcd362?sid=37466228-6f68-4daa-95d5-0379531b2a2c",
     },
     {
       id: 4,
-      title: "NLP Analysis Tool",
-      description: "Text analysis and sentiment detection application",
+      title: "PoliseeAI",
+      description: "AI-powered platform that transforms complex legislation into personalized impact reports",
       thumbnail: "/project-thumbnails/placeholder.svg",
       videoUrl: "/project-videos/placeholder.mp4",
+      embedUrl: "https://www.loom.com/embed/00f16966df254e9ba1ec6d5f6a30818c?sid=c24fa744-019f-45e4-bcbc-459e28569406",
     },
     {
       id: 5,
@@ -49,10 +52,11 @@ export default function Home() {
     },
     {
       id: 6,
-      title: "AI Code Assistant",
-      description: "Intelligent code completion and review system",
+      title: "ADempiere Modernization",
+      description: "Modern REST API and AI Agent for open-source Enterprise Resource Planning system",
       thumbnail: "/project-thumbnails/placeholder.svg",
       videoUrl: "/project-videos/placeholder.mp4",
+      embedUrl: "https://www.loom.com/embed/fb77758267da4fafbfc143833fdf3436?sid=50b50db4-d8ab-4589-8e0b-bff6decba401",
     },
   ];
 
@@ -435,6 +439,7 @@ export default function Home() {
                 title={project.title}
                 description={project.description}
                 thumbnail={project.thumbnail}
+                embedUrl={(project as any).embedUrl}
                 delay={index * 0.1}
               />
             ))}

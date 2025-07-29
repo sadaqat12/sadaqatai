@@ -6,25 +6,26 @@ import type { Metadata } from "next";
 const projectsData = [
   {
     id: 1,
-    title: "AI Chat Assistant",
-    description: "Advanced conversational AI with natural language processing capabilities, featuring real-time responses and context awareness.",
-    longDescription: "This project showcases an advanced AI chat assistant built with cutting-edge natural language processing techniques. The system features real-time response generation, context-aware conversations, and seamless integration with various APIs.",
+    title: "Wordwise",
+    description: "AI writing assistant for sales teams with personalization and email optimization",
+    longDescription: "Wordwise is a Grammarly-inspired writing assistant specifically tailored for sales professionals. It goes beyond basic grammar checking to help salespeople craft personalized, compelling emails and sales documents. The platform uses AI to suggest improvements that increase engagement, optimize messaging for specific prospects, and maintain consistent brand voice while personalizing content for each recipient.",
     thumbnail: "/project-thumbnails/placeholder.svg",
     videoUrl: "/project-videos/placeholder.mp4",
-    techStack: ["React", "TypeScript", "OpenAI API", "Next.js", "Tailwind CSS", "Vercel"],
-    githubUrl: "https://github.com/username/project-1",
+    embedUrl: "https://www.loom.com/embed/363ee9d6b7784dbdb11d0b47709175f9?sid=d2c5a7ac-5db3-4ec9-9fb1-7f1656494846",
+    techStack: ["TypeScript", "Next.js", "Supabase", "OpenAI API", "Tailwind CSS", "Vercel"],
+    githubUrl: "https://github.com/sadaqat12/wordwise",
     challenges: [
       {
-        challenge: "Managing conversation context across multiple turns",
-        solution: "Implemented a sophisticated context window management system using vector embeddings"
+        challenge: "Creating sales-specific writing suggestions beyond basic grammar",
+        solution: "Developed AI models trained on successful sales communications to provide context-aware suggestions for persuasion, personalization, and call-to-action optimization"
       },
       {
-        challenge: "Optimizing response time for better user experience",
-        solution: "Used streaming responses and edge functions to reduce latency by 60%"
+        challenge: "Real-time personalization without sacrificing performance",
+        solution: "Implemented edge computing with streaming AI responses, allowing instant personalization suggestions while maintaining sub-second response times"
       },
       {
-        challenge: "Handling rate limits and API failures gracefully",
-        solution: "Built a robust retry mechanism with exponential backoff and user-friendly error messages"
+        challenge: "Balancing automation with authentic human voice",
+        solution: "Created customizable tone profiles and guardrails that maintain the salesperson's authentic voice while enhancing effectiveness and fixing errors"
       }
     ]
   },
@@ -50,41 +51,43 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Real-time Analytics Dashboard",
-    description: "Live data monitoring and analytics platform with real-time updates.",
-    longDescription: "A comprehensive analytics dashboard that provides real-time insights and monitoring capabilities. Features WebSocket connections for live data streaming and dynamic visualizations.",
+    title: "Service Call Manager",
+    description: "Desktop app for managing appliance repairs with AI-powered workflow automation",
+    longDescription: "FlowGenius is an Electron desktop application designed for managing appliance repair service calls with AI-powered workflow automation using n8n integration. It features comprehensive service call management, AI-powered auto-tagging for appliance types, stale call detection, and daily service sheet generation with PDF export. The hybrid workflow system combines n8n's visual workflow designer with local fallbacks for reliability.",
     thumbnail: "/project-thumbnails/placeholder.svg",
     videoUrl: "/project-videos/placeholder.mp4",
-    techStack: ["React", "Node.js", "WebSocket", "Chart.js", "Redis"],
-    githubUrl: "https://github.com/username/project-3",
+    embedUrl: "https://www.loom.com/embed/cba9b665b5ca49979a89bfda5fbcd362?sid=37466228-6f68-4daa-95d5-0379531b2a2c",
+    techStack: ["React 18", "TypeScript", "Electron 27", "Tailwind CSS", "shadcn/ui", "Supabase", "PostgreSQL", "n8n", "Node.js"],
+    githubUrl: "https://github.com/sadaqat12/flowgenius",
     challenges: [
       {
-        challenge: "Handling high-frequency data updates without UI lag",
-        solution: "Implemented data throttling and React optimization techniques for smooth updates"
+        challenge: "Integrating complex workflow automation in a desktop application",
+        solution: "Embedded n8n server directly within the Electron app with visual workflow designer, enabling one-click workflow creation while maintaining sub-second response times"
       },
       {
-        challenge: "Scaling WebSocket connections for multiple users",
-        solution: "Built a distributed WebSocket server architecture with Redis pub/sub"
+        challenge: "Ensuring reliability when external services fail",
+        solution: "Implemented a hybrid workflow system with intelligent fallbacks - when n8n or external services are unavailable, the app seamlessly switches to local processing to maintain core functionality"
       }
     ]
   },
   {
     id: 4,
-    title: "Machine Learning Pipeline",
-    description: "Automated ML workflow with model deployment and monitoring.",
-    longDescription: "An end-to-end machine learning pipeline that automates model training, evaluation, and deployment. Features continuous integration for ML models and real-time performance monitoring.",
+    title: "PoliseeAI",
+    description: "AI-powered platform that transforms complex legislation into personalized impact reports",
+    longDescription: "Polisee is an open-source web application that democratizes access to legislative information by transforming complex bills into personalized impact reports for citizens. Using AI and Natural Language Processing, it helps users understand how proposed legislation will directly affect their lives through multi-step persona creation and AI-powered analysis. The platform captures citizen sentiment on bills, aggregating community feedback to drive civic engagement and provide lawmakers with valuable constituent insights.",
     thumbnail: "/project-thumbnails/placeholder.svg",
     videoUrl: "/project-videos/placeholder.mp4",
-    techStack: ["Python", "TensorFlow", "Docker", "FastAPI", "Kubernetes"],
-    githubUrl: "https://github.com/username/project-4",
+    embedUrl: "https://www.loom.com/embed/00f16966df254e9ba1ec6d5f6a30818c?sid=c24fa744-019f-45e4-bcbc-459e28569406",
+    techStack: ["Next.js 15", "TypeScript", "Tailwind CSS", "Shadcn UI", "Supabase", "PostgreSQL", "OpenAI API", "Congress.gov API", "Vercel"],
+    githubUrl: "https://github.com/PoliseeAI/polisee",
     challenges: [
       {
-        challenge: "Automating model retraining with new data",
-        solution: "Created a event-driven pipeline with automated data validation and model versioning"
+        challenge: "Making complex legislative text accessible to everyday citizens",
+        solution: "Developed an AI-powered system that analyzes bills based on user personas, generating personalized impact reports with plain language explanations"
       },
       {
-        challenge: "Ensuring model reproducibility across environments",
-        solution: "Containerized the entire pipeline with strict dependency management"
+        challenge: "Capturing and mobilizing citizen sentiment on proposed legislation",
+        solution: "Built sentiment analysis features that collect user feedback on bill impacts, aggregating community responses to drive civic engagement and provide lawmakers with constituent insights on how legislation affects real people"
       }
     ]
   },
@@ -110,21 +113,22 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "AI Content Generator",
-    description: "Automated content creation platform powered by advanced AI models.",
-    longDescription: "An intelligent content generation platform that leverages state-of-the-art AI models to create high-quality content. Features customizable templates and fine-tuned models for specific use cases.",
+    title: "ADempiere Modernization",
+    description: "Modern REST API and AI Agent for open-source Enterprise Resource Planning system",
+    longDescription: "ADempiere is a robust, open-source Enterprise Resource Planning (ERP) and Customer Relationship Management (CRM) system. This project showcases the development of a comprehensive REST API and an AI-powered chatbot agent that transforms ADempiere into a modern, API-first platform. The AI agent revolutionizes user interaction by allowing natural language commands to perform complex ERP tasks, eliminating the need to navigate the legacy UI. Built on a modular, multi-tier architecture, it provides flexible deployment options and supports multiple client interfaces including desktop, web, POS, mobile applications, and now conversational AI.",
     thumbnail: "/project-thumbnails/placeholder.svg",
     videoUrl: "/project-videos/placeholder.mp4",
-    techStack: ["Next.js", "GPT-4", "Vercel AI SDK", "PostgreSQL", "Stripe"],
-    githubUrl: "https://github.com/username/project-6",
+    embedUrl: "https://www.loom.com/embed/fb77758267da4fafbfc143833fdf3436?sid=50b50db4-d8ab-4589-8e0b-bff6decba401",
+    techStack: ["Java 11-17", "JAX-RS (Jersey)", "JWT", "OpenAPI 3.0", "PostgreSQL", "Oracle", "MySQL", "ZK Framework", "Swing", "Docker", "Gradle"],
+    githubUrl: "https://github.com/sadaqat12/AdempiereV2",
     challenges: [
       {
-        challenge: "Maintaining content quality and relevance",
-        solution: "Implemented multi-stage validation with human-in-the-loop feedback system"
+        challenge: "Modernizing a Legacy System for API-First Integrations",
+        solution: "Designed and implemented a comprehensive REST API using JAX-RS (Jersey), secured with JWT and fully documented with OpenAPI. This transformed ADempiere into a modern, API-first platform that can serve as a headless ERP/CRM backend for any modern frontend or external system."
       },
       {
-        challenge: "Managing API costs at scale",
-        solution: "Built intelligent caching and prompt optimization to reduce API calls by 40%"
+        challenge: "Overcoming the Steep Learning Curve of Complex Legacy UI",
+        solution: "Developed an AI-powered chatbot agent that allows users to perform key ERP actions through natural language commands. This eliminated the need to navigate the outdated and convoluted UI, making the system accessible to non-technical users and dramatically reducing training time from weeks to hours."
       }
     ]
   }
@@ -193,15 +197,25 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         {/* Video Section */}
         <div className="mb-16 animate-fade-in" style={{ animationDelay: "0.1s" }}>
           <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-gray-100">
-            <video
-              src={project.videoUrl}
-              autoPlay
-              muted
-              loop
-              playsInline
-              controls
-              className="w-full h-full object-cover"
-            />
+            {(project as any).embedUrl ? (
+              <iframe
+                src={(project as any).embedUrl}
+                frameBorder="0"
+                allowFullScreen
+                className="absolute top-0 left-0 w-full h-full"
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+              />
+            ) : (
+              <video
+                src={project.videoUrl}
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls
+                className="w-full h-full object-cover"
+              />
+            )}
           </div>
         </div>
 
@@ -272,7 +286,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
             <section className="animate-fade-in" style={{ animationDelay: "0.6s" }}>
               <div className="border-t pt-8">
                 <Link
-                  href="/projects"
+                  href="/#projects"
                   className="text-blue-600 hover:text-blue-700 font-medium transition-colors"
                 >
                   ← View All Projects

@@ -8,10 +8,11 @@ interface ProjectCardProps {
   title: string;
   description: string;
   thumbnail: string;
+  embedUrl?: string;
   delay?: number;
 }
 
-export function ProjectCard({ id, title, description, thumbnail, delay = 0 }: ProjectCardProps) {
+export function ProjectCard({ id, title, description, thumbnail, embedUrl, delay = 0 }: ProjectCardProps) {
   return (
     <Link href={`/projects/${id}`}>
       <div
@@ -21,13 +22,47 @@ export function ProjectCard({ id, title, description, thumbnail, delay = 0 }: Pr
         {/* Thumbnail Container */}
         <div className="relative aspect-video overflow-hidden bg-gray-100">
           <div className="relative w-full h-full">
-            <Image
-              src={thumbnail}
-              alt={title}
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
+            {embedUrl && id === 6 ? (
+              // For ADempiere, show a custom thumbnail
+              <div className="relative w-full h-full bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center">
+                <div className="text-white text-center">
+                  <div className="text-3xl font-bold mb-2">ADempiere</div>
+                  <div className="text-lg opacity-90">Modernization Demo</div>
+                </div>
+              </div>
+            ) : embedUrl && id === 4 ? (
+              // For PoliseeAI, show a custom thumbnail
+              <div className="relative w-full h-full bg-gradient-to-br from-blue-600 to-teal-600 flex items-center justify-center">
+                <div className="text-white text-center">
+                  <div className="text-3xl font-bold mb-2">🏛️ PoliseeAI</div>
+                  <div className="text-lg opacity-90">Watch Demo</div>
+                </div>
+              </div>
+            ) : embedUrl && id === 3 ? (
+              // For Service Call Manager, show a custom thumbnail
+              <div className="relative w-full h-full bg-gradient-to-br from-orange-600 to-red-600 flex items-center justify-center">
+                <div className="text-white text-center">
+                  <div className="text-3xl font-bold mb-2">🔧 Service Call</div>
+                  <div className="text-lg opacity-90">Manager Demo</div>
+                </div>
+              </div>
+            ) : embedUrl && id === 1 ? (
+              // For Wordwise, show a custom thumbnail
+              <div className="relative w-full h-full bg-gradient-to-br from-green-600 to-emerald-600 flex items-center justify-center">
+                <div className="text-white text-center">
+                  <div className="text-3xl font-bold mb-2">✍️ Wordwise</div>
+                  <div className="text-lg opacity-90">Sales Writing AI</div>
+                </div>
+              </div>
+            ) : (
+              <Image
+                src={thumbnail}
+                alt={title}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            )}
             {/* Play icon overlay */}
             <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
               <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
