@@ -31,21 +31,26 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "3D Visualization Tool",
-    description: "Interactive 3D data visualization using Three.js for complex datasets.",
-    longDescription: "A powerful 3D visualization tool that transforms complex data into interactive, immersive experiences. Built with Three.js and WebGL, it enables users to explore multidimensional datasets through intuitive 3D interfaces.",
+    title: "SnapConnect",
+    description: "AI-powered social travel app with ephemeral sharing and intelligent travel assistance",
+    longDescription: "SnapConnect is an innovative social media application designed specifically for travelers, fusing engaging ephemeral social features with AI-driven travel tools. The app combines social connectivity through ephemeral photo/video snaps, 24-hour stories, and real-time chat with powerful AI features including Caption Compass for creative captions, Travel Advisor chatbot for personalized tips and flight hacks, Local Insights for GPS-based recommendations, Story Snippet Generator for blog posts, and Culture & Cuisine Coach using computer vision. Built with React Native and Supabase, it leverages GPT-4 and GPT-4 Vision with RAG architecture to create an indispensable tool for modern travelers.",
     thumbnail: "/project-thumbnails/placeholder.svg",
     videoUrl: "/project-videos/placeholder.mp4",
-    techStack: ["Three.js", "React", "WebGL", "D3.js", "TypeScript"],
-    githubUrl: "https://github.com/username/project-2",
+    embedUrl: "https://www.loom.com/embed/0da6d95097ab4392b9f619a5faa16b46?sid=5bc3b84c-edce-4f35-aad5-06e1204912e9",
+    techStack: ["React Native", "Expo", "TypeScript", "NativeWind", "Supabase", "PostgreSQL", "pgvector", "OpenAI GPT-4", "Edge Functions", "Zustand"],
+    githubUrl: "https://github.com/sadaqat12/snapconnect",
     challenges: [
       {
-        challenge: "Rendering performance with large datasets",
-        solution: "Implemented level-of-detail rendering and GPU instancing for smooth 60fps performance"
+        challenge: "Building real-time ephemeral content sharing with cross-platform consistency",
+        solution: "Implemented Supabase Realtime for instant updates and designed a robust media handling system with automatic cleanup for ephemeral content, ensuring consistent experience across iOS and Android"
       },
       {
-        challenge: "Creating intuitive 3D navigation controls",
-        solution: "Designed custom camera controls with smooth transitions and user-friendly gestures"
+        challenge: "Integrating multiple AI features without compromising app performance",
+        solution: "Utilized Supabase Edge Functions to offload AI processing, implemented smart caching strategies, and used pgvector for efficient RAG implementation, maintaining smooth app performance"
+      },
+      {
+        challenge: "Creating context-aware AI responses for diverse travel scenarios",
+        solution: "Built a sophisticated RAG system with specialized embeddings for travel knowledge, implemented GPS-based context injection, and fine-tuned prompts for culturally sensitive and location-aware AI responses"
       }
     ]
   },

@@ -62,6 +62,14 @@ export function ProjectCard({ id, title, description, thumbnail, embedUrl, delay
                   <div className="text-lg opacity-90">Game Demo</div>
                 </div>
               </div>
+            ) : id === 2 ? (
+              // For SnapConnect, show a custom thumbnail
+              <div className="relative w-full h-full bg-gradient-to-br from-pink-600 to-orange-600 flex items-center justify-center">
+                <div className="text-white text-center">
+                  <div className="text-3xl font-bold mb-2">✈️ SnapConnect</div>
+                  <div className="text-lg opacity-90">Travel Social App</div>
+                </div>
+              </div>
             ) : (
               <Image
                 src={thumbnail}

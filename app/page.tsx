@@ -22,10 +22,11 @@ export default function Home() {
     },
     {
       id: 2,
-      title: "Computer Vision System",
-      description: "Real-time object detection and image analysis platform",
+      title: "SnapConnect",
+      description: "AI-powered social travel app with ephemeral sharing and intelligent travel assistance",
       thumbnail: "/project-thumbnails/placeholder.svg",
       videoUrl: "/project-videos/placeholder.mp4",
+      embedUrl: "https://www.loom.com/embed/0da6d95097ab4392b9f619a5faa16b46?sid=5bc3b84c-edce-4f35-aad5-06e1204912e9",
     },
     {
       id: 3,
