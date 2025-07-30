@@ -885,3 +885,94 @@ Email sent successfully: { data: { id: '5c78e48d-ea2e-4be6-b342-c4c2fd0c8dc4' },
  ✓ Compiled in 83ms
  ✓ Compiled in 94ms
  ✓ Compiled in 103ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/pages/_app/build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/pages/_app/build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sadaqatali/Documents/GauntletAI/sadaqatai/.next/server/pages/_app/build-manifest.json'
+}
+[?25h

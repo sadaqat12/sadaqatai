@@ -54,6 +54,14 @@ export function ProjectCard({ id, title, description, thumbnail, embedUrl, delay
                   <div className="text-lg opacity-90">Sales Writing AI</div>
                 </div>
               </div>
+            ) : embedUrl && id === 5 ? (
+              // For Cricket 3D, show a custom thumbnail
+              <div className="relative w-full h-full bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center">
+                <div className="text-white text-center">
+                  <div className="text-3xl font-bold mb-2">🏏 Cricket 3D</div>
+                  <div className="text-lg opacity-90">Game Demo</div>
+                </div>
+              </div>
             ) : (
               <Image
                 src={thumbnail}

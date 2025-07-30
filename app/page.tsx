@@ -45,10 +45,11 @@ export default function Home() {
     },
     {
       id: 5,
-      title: "Predictive Analytics",
-      description: "Time series forecasting and trend analysis system",
+      title: "Cricket 3D",
+      description: "Realistic 3D cricket game with batting, bowling, fielding mechanics and AI-powered gameplay",
       thumbnail: "/project-thumbnails/placeholder.svg",
       videoUrl: "/project-videos/placeholder.mp4",
+      embedUrl: "https://www.loom.com/embed/4dafa3b7cdc845909b4f32a6b516c362?sid=5ba015dd-230c-4717-92ed-7aa809c239aa",
     },
     {
       id: 6,

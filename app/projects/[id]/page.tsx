@@ -93,21 +93,26 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "Collaborative Code Editor",
-    description: "Real-time collaborative coding environment with live cursor tracking.",
-    longDescription: "A browser-based collaborative code editor that enables multiple developers to code together in real-time. Features syntax highlighting, live cursor tracking, and integrated video chat.",
+    title: "Cricket 3D",
+    description: "Realistic 3D cricket game with batting, bowling, fielding mechanics and AI-powered gameplay",
+    longDescription: "Cricket 3D is a realistic 3D cricket game built with Three.js that provides an authentic cricket experience. The game features a 70-meter radius oval field with a 22-yard pitch, proper crease markings, wickets, and a boundary rope. It includes realistic environment with atmospheric lighting, shadows, and fog for depth perception. The game offers interactive controls with mouse-controlled camera orbit, zoom, and pan, along with keyboard-controlled player movement. It features comprehensive batting and bowling mechanics with various shot types and delivery styles, an AI-based fielding system with catch detection and dynamic positioning, and a complete scoring system tracking runs, wickets, and overs. Game modes include free play, target chase, and local multiplayer.",
     thumbnail: "/project-thumbnails/placeholder.svg",
     videoUrl: "/project-videos/placeholder.mp4",
-    techStack: ["React", "WebRTC", "Monaco Editor", "Socket.io", "CRDT"],
-    githubUrl: "https://github.com/username/project-5",
+    embedUrl: "https://www.loom.com/embed/4dafa3b7cdc845909b4f32a6b516c362?sid=5ba015dd-230c-4717-92ed-7aa809c239aa",
+    techStack: ["JavaScript", "Three.js", "Node.js", "OrbitControls.js", "FBX/glTF", "WebGL", "CSS"],
+    githubUrl: "https://github.com/username/cricket-3d",
     challenges: [
       {
-        challenge: "Resolving concurrent edits without conflicts",
-        solution: "Implemented Conflict-free Replicated Data Types (CRDT) for seamless collaboration"
+        challenge: "Creating realistic physics for ball movement and player interactions",
+        solution: "Implemented custom physics calculations for ball trajectory, spin, bounce, and collision detection to ensure authentic cricket ball behavior and player responses"
       },
       {
-        challenge: "Low-latency cursor synchronization",
-        solution: "Used WebRTC data channels for peer-to-peer cursor updates"
+        challenge: "Developing intelligent AI fielding system with natural movement",
+        solution: "Built an AI-based fielding system with features like predictive positioning, catch detection algorithms, ground chase mechanics, and dynamic fielder coordination for realistic gameplay"
+      },
+      {
+        challenge: "Optimizing 3D performance for smooth gameplay on web browsers",
+        solution: "Utilized efficient rendering techniques, level-of-detail models, and WebGL optimizations to maintain 60fps performance while rendering the detailed cricket field, players, and animations"
       }
     ]
   },
