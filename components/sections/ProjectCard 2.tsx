@@ -9,10 +9,12 @@ interface ProjectCardProps {
   title: string;
   description: string;
   thumbnail: string;
+  videoUrl: string;
+  techStack: string[];
   delay?: number;
 }
 
-export function ProjectCard({ id, title, description, thumbnail, delay = 0 }: ProjectCardProps) {
+export function ProjectCard({ id, title, description, thumbnail, videoUrl, techStack, delay = 0 }: ProjectCardProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -27,7 +29,7 @@ export function ProjectCard({ id, title, description, thumbnail, delay = 0 }: Pr
         <div className="relative aspect-video overflow-hidden bg-gray-100">
           {isHovered ? (
             <video
-              src={project.videoUrl}
+              src={videoUrl}
               autoPlay
               muted
               loop
@@ -37,8 +39,8 @@ export function ProjectCard({ id, title, description, thumbnail, delay = 0 }: Pr
           ) : (
             <div className="relative w-full h-full">
               <Image
-                src={project.thumbnail}
-                alt={project.title}
+                src={thumbnail}
+                alt={title}
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -62,15 +64,15 @@ export function ProjectCard({ id, title, description, thumbnail, delay = 0 }: Pr
         {/* Content */}
         <div className="p-6">
           <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
-            {project.title}
+            {title}
           </h3>
           <p className="text-gray-600 text-sm mb-4 line-clamp-2">
-            {project.description}
+            {description}
           </p>
 
           {/* Tech Stack */}
           <div className="flex flex-wrap gap-2">
-            {project.techStack.slice(0, 3).map((tech) => (
+            {techStack.slice(0, 3).map((tech) => (
               <span
                 key={tech}
                 className="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full"
@@ -78,9 +80,9 @@ export function ProjectCard({ id, title, description, thumbnail, delay = 0 }: Pr
                 {tech}
               </span>
             ))}
-            {project.techStack.length > 3 && (
+            {techStack.length > 3 && (
               <span className="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full">
-                +{project.techStack.length - 3}
+                +{techStack.length - 3}
               </span>
             )}
           </div>
