@@ -100,7 +100,7 @@ const projectsData = [
     videoUrl: "/project-videos/placeholder.mp4",
     embedUrl: "https://www.loom.com/embed/4dafa3b7cdc845909b4f32a6b516c362?sid=5ba015dd-230c-4717-92ed-7aa809c239aa",
     techStack: ["JavaScript", "Three.js", "Node.js", "OrbitControls.js", "FBX/glTF", "WebGL", "CSS"],
-    githubUrl: "https://github.com/username/cricket-3d",
+    githubUrl: "https://github.com/sadaqat12/cricketai",
     challenges: [
       {
         challenge: "Creating realistic physics for ball movement and player interactions",

@@ -1,0 +1,73 @@
+
+> sadaqat-portfolio@0.1.0 dev
+> next dev --turbopack
+
+ ⚠ Warning: Found multiple lockfiles. Selecting /Users/sadaqatali/Documents/GauntletAI/package-lock.json.
+   Consider removing the lockfiles at:
+   * /Users/sadaqatali/Documents/GauntletAI/sadaqatai/package-lock.json
+
+   ▲ Next.js 15.4.4 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.221:3000
+
+ ✓ Starting...
+ ✓ Ready in 824ms
+ ○ Compiling / ...
+Error: Cannot apply unknown utility class `text-foreground`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+    [2m[at onInvalidCandidate (/Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/tailwindcss/dist/lib.js:18:1312)][0m
+    [2m[at ge (/Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/tailwindcss/dist/lib.js:13:29803)][0m
+    [2m[at /Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/tailwindcss/dist/lib.js:18:373][0m
+    [2m[at I (/Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/tailwindcss/dist/lib.js:3:1656)][0m
+    [2m[at je (/Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/tailwindcss/dist/lib.js:18:172)][0m
+    [2m[at bi (/Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/tailwindcss/dist/lib.js:35:780)][0m
+    [2m[at process.processTicksAndRejections (node:internal/process/task_queues:105:5)][0m
+    [2m[at async yi (/Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/tailwindcss/dist/lib.js:35:1123)][0m
+    [2m[at async _r (/Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/@tailwindcss/node/dist/index.js:10:3384)][0m
+    [2m[at async p (/Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/@tailwindcss/postcss/dist/index.js:10:4019)][0m
+ ✓ Compiled / in 1212ms
+ GET / 200 in 1391ms
+Error: Cannot apply unknown utility class `bg-primary/20`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+    [2m[at onInvalidCandidate (/Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/tailwindcss/dist/lib.js:18:1312)][0m
+    [2m[at ge (/Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/tailwindcss/dist/lib.js:13:29803)][0m
+    [2m[at /Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/tailwindcss/dist/lib.js:18:373][0m
+    [2m[at I (/Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/tailwindcss/dist/lib.js:3:1656)][0m
+    [2m[at je (/Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/tailwindcss/dist/lib.js:18:172)][0m
+    [2m[at bi (/Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/tailwindcss/dist/lib.js:35:780)][0m
+    [2m[at process.processTicksAndRejections (node:internal/process/task_queues:105:5)][0m
+    [2m[at async yi (/Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/tailwindcss/dist/lib.js:35:1123)][0m
+    [2m[at async _r (/Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/@tailwindcss/node/dist/index.js:10:3384)][0m
+    [2m[at async p (/Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/@tailwindcss/postcss/dist/index.js:10:4019)][0m
+Error: Cannot apply unknown utility class `md:px-8`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+    [2m[at onInvalidCandidate (/Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/tailwindcss/dist/lib.js:18:1312)][0m
+    [2m[at ge (/Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/tailwindcss/dist/lib.js:13:29503)][0m
+    [2m[at /Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/tailwindcss/dist/lib.js:18:373][0m
+    [2m[at I (/Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/tailwindcss/dist/lib.js:3:1656)][0m
+    [2m[at je (/Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/tailwindcss/dist/lib.js:18:172)][0m
+    [2m[at bi (/Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/tailwindcss/dist/lib.js:35:780)][0m
+    [2m[at process.processTicksAndRejections (node:internal/process/task_queues:105:5)][0m
+    [2m[at async yi (/Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/tailwindcss/dist/lib.js:35:1123)][0m
+    [2m[at async _r (/Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/@tailwindcss/node/dist/index.js:10:3384)][0m
+    [2m[at async p (/Users/sadaqatali/Documents/GauntletAI/sadaqatai/node_modules/@tailwindcss/postcss/dist/index.js:10:4019)][0m
+ ✓ Compiled / in 60ms
+ GET / 200 in 222ms
+ GET / 200 in 197ms
+ ✓ Compiled / in 31ms
+ GET / 200 in 122ms
+ GET / 200 in 115ms
+ ✓ Compiled in 182ms
+ ✓ Compiled in 25ms
+ ✓ Compiled in 18ms
+ ✓ Compiled in 35ms
+ ✓ Compiled / in 14ms
+ GET / 200 in 90ms
+ ✓ Compiled / in 13ms
+ GET / 200 in 59ms
+ ✓ Compiled in 21ms
+ ✓ Compiled / in 74ms
+ GET / 200 in 149ms
+ ✓ Compiled in 18ms
+ ✓ Compiled in 22ms
+ ✓ Compiled in 51ms
+ ✓ Compiled / in 28ms
+ GET / 200 in 121ms
+[?25h
