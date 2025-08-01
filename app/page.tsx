@@ -394,7 +394,7 @@ export default function Home() {
                     <h4 className="text-xl font-semibold text-gray-900">Master of Science in Computer Science</h4>
                     <p className="text-gray-700 font-medium">Georgia Institute of Technology</p>
                     <p className="text-gray-600">Aug 2025</p>
-                    <p className="text-gray-600 text-sm mt-2">Specialization: Machine Learning & AI Systems</p>
+                    <p className="text-gray-600 text-sm mt-2">Specialization: Machine Learning</p>
                   </div>
                 </div>
               </div>
