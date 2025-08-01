@@ -3,8 +3,10 @@
 import Image from "next/image";
 import { useState } from "react";
 import { ProjectCard } from "@/components/sections/ProjectCard";
+import { useAnalytics } from "@/lib/hooks/useAnalytics";
 
 export default function Home() {
+  const { trackContactFormSubmit, trackResumeDownload } = useAnalytics();
   const [isContactSubmitting, setIsContactSubmitting] = useState(false);
   const [contactStatus, setContactStatus] = useState<{ type: 'success' | 'error' | null; message: string }>({ type: null, message: '' });
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -240,10 +242,12 @@ export default function Home() {
       const data = await response.json();
       
       if (response.ok) {
+        trackContactFormSubmit(true);
         setContactStatus({ type: 'success', message: 'Thank you for your message! I\'ll get back to you soon.' });
         setFormData({ name: '', email: '', message: '' });
         setFormErrors({});
       } else {
+        trackContactFormSubmit(false);
         setContactStatus({ type: 'error', message: data.error || 'Something went wrong. Please try again.' });
       }
     } catch {
@@ -318,6 +322,7 @@ export default function Home() {
                 <a 
                   href="/SadaqatAli.pdf" 
                   download
+                  onClick={() => trackResumeDownload()}
                   className="inline-block px-8 py-3 bg-green-600 text-white font-medium rounded-full hover:bg-green-700 hover:scale-105 transition-all duration-200 shadow-md text-center"
                 >
                   Download Resume

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { useAnalytics } from "@/lib/hooks/useAnalytics";
 
 interface ProjectCardProps {
   id: number;
@@ -13,8 +14,10 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ id, title, description, thumbnail, embedUrl, delay = 0 }: ProjectCardProps) {
+  const { trackProjectView } = useAnalytics();
+  
   return (
-    <Link href={`/projects/${id}`}>
+    <Link href={`/projects/${id}`} onClick={() => trackProjectView(title)}>
       <div
         className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer animate-fade-in"
         style={{ animationDelay: `${delay}s` }}
