@@ -122,7 +122,7 @@ export default function Home() {
       title: "AI-First Engineer | Challenger",
       company: "Gauntlet AI",
       period: "Jun 2025 - Present",
-      description: "Completing an intensive 10-week AI engineering sprint (80-100 hrs/week), combining 3 weeks of remote workshops with 7 weeks on-site in Austin, TX",
+      description: "Completed an intensive 10-week AI engineering sprint (80-100 hrs/week), combining 3 weeks of remote workshops with 7 weeks on-site in Austin, TX",
       highlights: [
         "Designing and deploying end-to-end AI applications, delivering weekly 'gauntlet' challenges",
         "Collaborating with a hand-picked cohort of top-tier engineers and mentors",
