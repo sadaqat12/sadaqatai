@@ -358,7 +358,7 @@ export default function Home() {
           <div className="mb-20 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 leading-relaxed text-lg">
-                I&apos;m an AI-First Engineer who just graduated from Gauntlet AI&apos;s intensive challenge program, where I&apos;m mastering the art of building cutting-edge AI applications. 
+                I&apos;m an AI-First Engineer who just graduated from Gauntlet AI&apos;s intensive challenge program, where I&apos;m mastered the art of building cutting-edge AI applications. 
                 With a unique blend of technical expertise and business acumen, I&apos;ve successfully driven 3x growth as COO of a family business while pursuing my passion for technology.
               </p>
               <p className="text-gray-700 leading-relaxed text-lg mt-4">
