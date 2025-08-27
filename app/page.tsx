@@ -358,11 +358,11 @@ export default function Home() {
           <div className="mb-20 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 leading-relaxed text-lg">
-                I&apos;m an AI-First Engineer currently participating in Gauntlet AI&apos;s intensive challenge program, where I&apos;m mastering the art of building cutting-edge AI applications. 
+                I&apos;m an AI-First Engineer who just graduated from Gauntlet AI&apos;s intensive challenge program, where I&apos;m mastering the art of building cutting-edge AI applications. 
                 With a unique blend of technical expertise and business acumen, I&apos;ve successfully driven 3x growth as COO of a family business while pursuing my passion for technology.
               </p>
               <p className="text-gray-700 leading-relaxed text-lg mt-4">
-                Currently pursuing my Master&apos;s in Computer Science at Georgia Tech, I bring hands-on experience from cloud security internships at Nationwide, 
+                I recently graduated with my Master&apos;s in Computer Science from Georgia Tech, I bring hands-on experience from cloud security internships at Nationwide, 
                 where I built AWS-based monitoring systems and enhanced data analytics platforms. My Bachelor&apos;s in Computer Science & Engineering from The Ohio State University, 
                 combined with a minor in Business, provides me with a holistic approach to solving complex problems.
               </p>
